@@ -8,7 +8,7 @@
   /* ---------- language: Korean lives in the HTML, English here ---------- */
   const EN = {
     'v.call': 'Call', 
-    'ui.pause': 'Pause video', 'ui.play': 'Play video',
+    'ui.pause': 'Pause video', 'ui.play': 'Play video', 'ui.spause': 'Pause slides', 'ui.splay': 'Play slides',
     'branch': 'Hwaseong Haenggung',
     'nav.who': 'Who', 'nav.course': 'Courses', 'nav.price': 'Prices', 'nav.visit': 'Find us',
     'cta.find': 'Find a course', 'cta.findCourse': 'Find your course', 'cta.from': 'Opening deal, 1 hour', 'won': ' KRW',
@@ -52,7 +52,7 @@
   };
   const ZH = {
     'v.call': '拨打电话', 
-    'ui.pause': '暂停视频', 'ui.play': '播放视频',
+    'ui.pause': '暂停视频', 'ui.play': '播放视频', 'ui.spause': '暂停轮播', 'ui.splay': '播放轮播',
     'branch': '华城行宫店',
     'nav.who': '和谁同行', 'nav.course': '路线', 'nav.price': '价格', 'nav.visit': '交通',
     'cta.find': '找路线', 'cta.findCourse': '找到适合你的路线', 'cta.from': '开业特惠 1小时', 'won': ' 韩元',
@@ -96,7 +96,7 @@
   };
   const JA = {
     'v.call': '電話する', 
-    'ui.pause': '動画を停止', 'ui.play': '動画を再生',
+    'ui.pause': '動画を停止', 'ui.play': '動画を再生', 'ui.spause': 'スライドを停止', 'ui.splay': 'スライドを再生',
     'branch': '華城行宮店',
     'nav.who': '誰と', 'nav.course': 'コース', 'nav.price': '料金', 'nav.visit': 'アクセス',
     'cta.find': 'コースを探す', 'cta.findCourse': 'あなたに合うコースを探す', 'cta.from': 'オープン特価 1時間', 'won': ' ウォン',
@@ -138,7 +138,7 @@
     'f.addr': '京畿道水原市八達区正祖路814、電話 +82-31-252-0582', 'f.hours': '毎日 10:00~19:00（冬季11月〜 10:00~17:00）、雨の日はお休み',
     'toast.copied': 'コピーしました'
   };
-  const KO = { 'toast.copied': '복사했어요', 'ui.play': '영상 재생' };
+  const KO = { 'toast.copied': '복사했어요', 'ui.play': '영상 재생', 'ui.splay': '슬라이드 재생' };
   $$('[data-i18n]').forEach(el => { KO[el.dataset.i18n] ??= el.textContent; });
   $$('[data-i18n-html]').forEach(el => { KO[el.dataset.i18nHtml] ??= el.innerHTML; });
   const DICTS = { ko: KO, en: EN, zh: ZH, ja: JA };
@@ -196,6 +196,28 @@
       btn.textContent = t(btn.dataset.i18n);
     };
     btn.addEventListener('click', () => { s.held = !s.held; sync(); });
+    new IntersectionObserver(([e]) => { s.seen = e.isIntersecting; sync(); }, { threshold: .25 }).observe(el);
+  });
+
+  /* ---------- trike slides: each one enters from the left; hover, focus or the button holds them ---------- */
+  $$('[data-slides]').forEach(el => {
+    const imgs = $$('.slide', el), btn = $('[data-slides-toggle]', el);
+    const s = { i: 0, seen: false, held: reduce, over: false, timer: 0 };
+    const step = () => {
+      const prev = imgs[s.i]; s.i = (s.i + 1) % imgs.length;
+      imgs.forEach(m => m.classList.remove('is-out'));
+      prev.classList.replace('is-on', 'is-out');
+      imgs[s.i].classList.add('is-on');
+    };
+    const sync = () => {
+      clearInterval(s.timer);
+      if (s.seen && !s.held && !s.over) s.timer = setInterval(step, 3500);
+      btn.dataset.i18n = s.held ? 'ui.splay' : 'ui.spause';
+      btn.textContent = t(btn.dataset.i18n);
+    };
+    btn.addEventListener('click', () => { s.held = !s.held; sync(); });
+    ['mouseenter', 'focusin'].forEach(ev => el.addEventListener(ev, () => { s.over = true; sync(); }));
+    ['mouseleave', 'focusout'].forEach(ev => el.addEventListener(ev, () => { s.over = false; sync(); }));
     new IntersectionObserver(([e]) => { s.seen = e.isIntersecting; sync(); }, { threshold: .25 }).observe(el);
   });
 
