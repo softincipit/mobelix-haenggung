@@ -11,6 +11,7 @@
 /* Hallmark · dismissed 25 · the band line is one display-size sentence, not running prose */
 /* Hallmark · dropped trike-fortress-wall.webp, hero-sinpungnu.webp, trike-hanok-gate.webp, trike-haenggung-gate.webp · the hero no longer rotates stills and each route shows its map */
 /* Hallmark · dropped the scroll-driven trike motion and the pinned showcase · the owner asked for a still picture and tighter steps */
+/* Hallmark · the statement sits over the official Suwon Hwaseong illustrated map, faded to a green ink wash at the owner's request; it is the owner's own map, not a drawn figure */
 /* Hallmark · answered F15 · the page grids share 96px; 24 and 40px are gaps inside a row (the persona and route rows), not between columns of a section */
 /* Hallmark · map buttons carry Naver, Kakao and Google's own colours and marks at the owner's request */
 /* Hallmark · waive 23 · the green ink band and the moss tint carry the committed posture · the group-rental band on ink is the Garden statement surface */
@@ -119,7 +120,9 @@ html:not(.js) .loop-toggle { display: none; }
 .hero__facts dd { margin: 0; font-size: var(--text-md); font-weight: 500; color: var(--on-ink); max-width: 24ch; }
 
 /* statement and the three figures */
-.statement { padding-block: var(--section-gap-l) var(--section-gap); }
+.statement { position: relative; isolation: isolate; overflow: hidden; padding-block: var(--section-gap-l) var(--section-gap); }
+.statement::before { content: ""; position: absolute; inset: 0; z-index: -1; background: url("../assets/img/hwaseong-illust.webp") no-repeat right -4% center / auto 112%; opacity: 0.38; -webkit-mask-image: linear-gradient(to right, transparent 8%, var(--color-ink) 70%); mask-image: linear-gradient(to right, transparent 8%, var(--color-ink) 70%); pointer-events: none; }
+@media (max-width: 60rem) { .statement::before { background-position: 30% 100%; background-size: auto 70%; opacity: 0.3; -webkit-mask-image: linear-gradient(to bottom, transparent 30%, var(--color-ink) 80%); mask-image: linear-gradient(to bottom, transparent 30%, var(--color-ink) 80%); } }
 .statement__title { max-width: 28ch; }
 .statement__lead { margin-top: var(--space-lg); max-width: 46ch; }
 .figures { list-style: none; margin: var(--space-3xl) 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
