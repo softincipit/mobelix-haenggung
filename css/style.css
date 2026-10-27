@@ -33,6 +33,7 @@
   --text-price: clamp(4.25rem, 9.5vw, 9rem);
   --text-figure: clamp(4rem, 9vw, 8rem);
   --dur-slide: 900ms;
+  --stage-trike: oklch(68% 0.07 142);
   --brand-naver: #00783A; --brand-naver-ink: var(--color-accent-ink);
   --brand-kakao: #FEE500; --brand-kakao-ink: #191600;
   --brand-g-red: #EA4335; --brand-g-blue: #4285F4; --brand-g-yellow: #FBBC05; --brand-g-green: #34A853;
@@ -160,7 +161,7 @@ html:not([lang="ko"]) .prow__p::before { content: "₩"; }
 .show { padding-block: var(--section-gap); }
 .show__grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); column-gap: var(--space-3xl); align-items: center; }
 .show__sticky { position: static; }
-.show__stage { position: relative; margin: 0; aspect-ratio: 5 / 4; width: 100%; max-width: 100%; display: grid; background: var(--color-ink); border-radius: var(--radius-card); overflow: hidden; }
+.show__stage { position: relative; margin: 0; aspect-ratio: 5 / 4; width: 100%; max-width: 100%; display: grid; background: var(--stage-trike); border-radius: var(--radius-card); overflow: hidden; }
 .show__stage .slide { grid-area: 1 / 1; width: 100%; height: 100%; object-fit: contain; }
 .js .show__stage .slide { transform: translateX(-100%); }
 .js .show__stage .slide.is-on { transform: none; transition: transform var(--dur-slide) var(--ease-out); }
