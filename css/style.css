@@ -302,6 +302,12 @@ html:not(.js) .show__stage .slide:not(:first-of-type) { display: none; }
   body:has(.nav.is-solid) .fab { display: grid; }
 }
 @media (max-width: 40rem) {
+  .freedom__cta { flex-wrap: nowrap; }
+  .freedom__hint { font-size: var(--text-md); }
+  .freedom__ig { min-height: 48px; padding: 0 var(--space-md); font-size: var(--text-md); }
+  .freedom__ig svg { width: 20px; height: 20px; }
+  .maps { display: grid; grid-template-columns: repeat(3, minmax(0, auto)); justify-content: start; gap: var(--space-xs); }
+  .mapbtn { padding: 0 var(--space-sm); font-size: var(--text-sm); }
   :root { --banner-h: 44px; --bar-h: 52px; }
   .nav__logo span, .lang .l-more { display: none; }
   .nav__right { gap: var(--space-sm); }
