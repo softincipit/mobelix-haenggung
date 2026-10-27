@@ -48,19 +48,104 @@
     'f.addr': '814 Jeongjo-ro, Paldal-gu, Suwon · +82-31-252-0582', 'f.hours': 'Daily 10:00–19:00 (winter from Nov 10:00–17:00) · closed when raining',
     'toast.copied': 'Copied'
   };
+  const ZH = {
+    'branch': '华城行宫店',
+    'nav.who': '和谁同行', 'nav.course': '路线', 'nav.price': '价格', 'nav.visit': '交通',
+    'cta.find': '找路线', 'cta.findCourse': '找到适合你的路线', 'cta.from': '开业特惠 · 1小时', 'won': ' 韩元',
+    'hero.kicker': '水原华城行宫 · 四轮电动自行车租赁',
+    'hero.t1': '骑四轮车', 'hero.t2': '游华城行宫',
+    'verb.1': '骑行', 'verb.2': '观赏', 'verb.3': '拍照', 'verb.4': '休憩',
+    'st.eyebrow': 'MOBELIX 华城行宫店',
+    'st.title': '步行太远，开车进不去。<br>游览世界遗产<em>水原华城</em>最轻松的方式。',
+    'st.lead': '四个轮子稳稳不倒，电动助力轻松上坡，后筐能装包包甚至小狗。第一次骑也能从店门口直接出发。',
+    'b.age': '13岁以上', 'b.helmet': '免费头盔', 'b.wheels': '四轮电动自行车', 'b.spots': '一次游遍景点',
+    'sh.eyebrow': 'THE TRIKE', 'sh.title': '第一次骑<br><em>也很轻松的理由</em>',
+    'sh.1t': '四轮，稳稳当当', 'sh.1': '停下来也不会倒。不用担心平衡，专心看风景。',
+    'sh.2t': '电动助力，轻松省力', 'sh.2': '城墙边的上坡，踩一下就上去了。',
+    'sh.3t': '后筐装得下', 'sh.3': '包包、零食，连小狗都能放进去。',
+    'ps.title': '你和<em>谁一起骑？</em>', 'ps.lead': '同行的人不同，推荐的路线也不同。',
+    'ps.1tag': '家庭出游', 'ps.1': '"孩子和长辈都能一起骑，不用担心平衡。"', 'ps.1cta': '家庭路线 →',
+    'ps.2tag': '情侣 · 朋友', 'ps.2': '"壁画村和行理团路的咖啡小巷，两个人慢慢逛。"', 'ps.2cta': '小巷路线 →',
+    'ps.3tag': '带着狗狗', 'ps.3': '"放进后筐，沿着水原川像散步一样骑行。"', 'ps.3cta': '水边路线 →',
+    'ps.4tag': '第一次来', 'ps.4': '"长安门和华西门，华城的代表风景一次看完。"', 'ps.4cta': '经典路线 →',
+    'cs.title': '从店门口出发的<em>三条路线</em>', 'cs.lead': '点击卡片，地图和途经地点会随之切换。',
+    'cs.aTag': '推荐初次来访', 'cs.aName': '城郭北门路线', 'cs.aHook': '长安门与华西门，华城的门面',
+    'cs.bTag': '推荐带狗狗', 'cs.bName': '水原川 · 华虹门', 'cs.bHook': '溪水与城墙相遇的风景',
+    'cs.cTag': '推荐家庭 · 情侣', 'cs.cName': '行宫环游路线', 'cs.cHook': '壁画村与行宫村小巷',
+    's.shop': 'MOBELIX 华城行宫店', 's.museum': '水原市立美术馆', 's.jangan': '长安门', 's.hwaseo': '华西门', 's.plaza': '行宫广场',
+    's.hmuseum': '水原华城博物馆', 's.eocha': '华城御车乘车处', 's.yeonmu': '练武台', 's.hwahong': '华虹门', 's.mural': '行宫洞壁画村', 's.church': '北水洞圣堂',
+    's.sinpung': '新丰洞壁画村', 's.village': '行宫村小路', 's.miro': '迷鲁閑亭',
+    'band.text': '<b>团体或多人租车</b>请提前联系，我们会为您备好车辆。', 'band.cta': '团体租车咨询',
+    'pr.title': '价格', 'pr.promo': '开业特惠至2026年11月30日 · 每辆车',
+    'pr.h1': '1小时', 'pr.h2': '2小时', 'pr.best': '推荐', 'pr.ask': '租车咨询',
+    'pr.note': '12月1日起恢复原价（1小时 ₩20,000 · 2小时 ₩35,000）。',
+    'r.title': '骑行前请确认', 'r.age': '年龄', 'r.ageV': '13岁以上可自行驾驶', 'r.id': '证件', 'r.idV': '租车时请出示身份证件（护照）',
+    'r.helmet': '头盔', 'r.helmetV': '免费提供', 'r.weather': '天气', 'r.weatherV': '雨天停业',
+    'r.pay': '付款', 'r.payV': '银行卡（Toss Payments）· 现金',
+    'fr.title': '行宫前，那份<em>自由的心情</em>',
+    'v.title': '正祖主题剧场<br><em>正对面</em>',
+    'v.addr': '地址', 'v.addrV': '京畿道水原市八达区正祖路814', 'v.near': '行宫疗养院旁边的建筑',
+    'v.hours': '营业时间', 'v.hoursV': '每天 10:00–19:00', 'v.winter': '冬季（11月起）10:00–17:00 · 雨天停业',
+    'v.tel': '电话', 'v.copy': '复制', 'm.naver': 'Naver地图', 'm.kakao': 'Kakao地图', 'm.google': 'Google地图',
+    'f.addr': '京畿道水原市八达区正祖路814 · +82-31-252-0582', 'f.hours': '每天 10:00–19:00（冬季11月起 10:00–17:00）· 雨天停业',
+    'toast.copied': '已复制'
+  };
+  const JA = {
+    'branch': '華城行宮店',
+    'nav.who': '誰と', 'nav.course': 'コース', 'nav.price': '料金', 'nav.visit': 'アクセス',
+    'cta.find': 'コースを探す', 'cta.findCourse': 'あなたに合うコースを探す', 'cta.from': 'オープン特価 1時間', 'won': ' ウォン',
+    'hero.kicker': '水原華城行宮 · 四輪電動自転車レンタル',
+    'hero.t1': '四輪で', 'hero.t2': '行宮を走る',
+    'verb.1': '乗る', 'verb.2': '見る', 'verb.3': '撮る', 'verb.4': '休む',
+    'st.eyebrow': 'MOBELIX 華城行宮店',
+    'st.title': '歩くには広く、車では入れない道。<br>世界遺産<em>水原華城</em>をいちばん気軽にめぐる方法。',
+    'st.lead': '倒れない四つの車輪、坂道もすいすいの電動アシスト、バッグや小型犬も乗せられる後ろのカゴ。初めての方もお店の前からすぐ出発できます。',
+    'b.age': '13歳以上', 'b.helmet': 'ヘルメット無料', 'b.wheels': '四輪電動自転車', 'b.spots': '名所を一度に',
+    'sh.eyebrow': 'THE TRIKE', 'sh.title': '初めてでも<br><em>ラクに乗れる理由</em>',
+    'sh.1t': '四輪で安定', 'sh.1': '止まっても倒れません。バランスより景色に集中できます。',
+    'sh.2t': '電動アシストで軽やか', 'sh.2': '城壁沿いの上り坂もペダルひと踏みでスイスイ。',
+    'sh.3t': '荷物は後ろのカゴへ', 'sh.3': 'バッグ、おやつ、小型犬までゆったり乗せられます。',
+    'ps.title': '誰と一緒に<em>走りますか？</em>', 'ps.lead': '一緒に行く人によって、おすすめコースが変わります。',
+    'ps.1tag': 'ご家族で', 'ps.1': '"子どももご両親も、バランスの心配なく一緒に走れます。"', 'ps.1cta': 'ファミリーコース →',
+    'ps.2tag': 'カップル · 友だちと', 'ps.2': '"壁画村と行理団キルのカフェ路地を、ふたりでゆっくり。"', 'ps.2cta': '路地コース →',
+    'ps.3tag': 'ワンちゃんと', 'ps.3': '"後ろのカゴにすっぽり。水原川沿いを散歩するように。"', 'ps.3cta': '川沿いコース →',
+    'ps.4tag': '初めての旅行者', 'ps.4': '"長安門と華西門、華城の名場面をまとめて。"', 'ps.4cta': '定番コース →',
+    'cs.title': 'お店から出発する<em>3つのコース</em>', 'cs.lead': 'カードを押すと、地図と立ち寄りスポットが切り替わります。',
+    'cs.aTag': '初めての方におすすめ', 'cs.aName': '城郭北門コース', 'cs.aHook': '長安門と華西門、華城の顔に出会う道',
+    'cs.bTag': 'ワンちゃん連れにおすすめ', 'cs.bName': '水原川 · 華虹門', 'cs.bHook': '流れと城壁が出会う風景',
+    'cs.cTag': 'ご家族 · カップルにおすすめ', 'cs.cName': '行宮ひとめぐりコース', 'cs.cHook': '壁画村と行宮村の路地散策',
+    's.shop': 'MOBELIX 華城行宮店', 's.museum': '水原市立美術館', 's.jangan': '長安門', 's.hwaseo': '華西門', 's.plaza': '行宮広場',
+    's.hmuseum': '水原華城博物館', 's.eocha': '華城御車 乗り場', 's.yeonmu': '練武台', 's.hwahong': '華虹門', 's.mural': '行宮洞 壁画村', 's.church': '北水洞聖堂',
+    's.sinpung': '新豊洞 壁画村', 's.village': '行宮村の小道', 's.miro': '美魯閑亭',
+    'band.text': '<b>団体・ご家族で複数台</b>のときは、事前にご連絡いただければご用意しておきます。', 'band.cta': '団体レンタルのお問い合わせ',
+    'pr.title': '料金', 'pr.promo': 'オープン特価 2026年11月30日まで · 1台あたり',
+    'pr.h1': '1時間', 'pr.h2': '2時間', 'pr.best': 'おすすめ', 'pr.ask': 'お問い合わせ',
+    'pr.note': '12月1日から通常料金（1時間 ₩20,000 · 2時間 ₩35,000）になります。',
+    'r.title': 'ご利用前にご確認ください', 'r.age': '年齢', 'r.ageV': '13歳以上がご自身で運転', 'r.id': '身分証', 'r.idV': 'レンタル時に必ずご提示ください（パスポート可）',
+    'r.helmet': 'ヘルメット', 'r.helmetV': '無料でお貸しします', 'r.weather': '天気', 'r.weatherV': '雨の日はお休み',
+    'r.pay': 'お支払い', 'r.payV': 'カード（Toss Payments）· 現金',
+    'fr.title': '行宮の前で、あの<em>自由な気分</em>',
+    'v.title': '正祖テーマ公演場<br><em>のすぐ向かい</em>',
+    'v.addr': '住所', 'v.addrV': '京畿道水原市八達区正祖路814', 'v.near': '行宮療養院のとなりの建物',
+    'v.hours': '営業時間', 'v.hoursV': '毎日 10:00–19:00', 'v.winter': '冬季（11月〜）10:00–17:00 · 雨の日はお休み',
+    'v.tel': '電話', 'v.copy': 'コピー', 'm.naver': 'Naverマップ', 'm.kakao': 'Kakaoマップ', 'm.google': 'Googleマップ',
+    'f.addr': '京畿道水原市八達区正祖路814 · +82-31-252-0582', 'f.hours': '毎日 10:00–19:00（冬季11月〜 10:00–17:00）· 雨の日はお休み',
+    'toast.copied': 'コピーしました'
+  };
   const KO = { 'toast.copied': '복사했어요' };
   $$('[data-i18n]').forEach(el => { KO[el.dataset.i18n] ??= el.textContent; });
   $$('[data-i18n-html]').forEach(el => { KO[el.dataset.i18nHtml] ??= el.innerHTML; });
-  const t = k => (root.lang === 'en' ? EN : KO)[k] ?? KO[k] ?? k;
+  const DICTS = { ko: KO, en: EN, zh: ZH, ja: JA };
+  const t = k => (DICTS[root.lang] || KO)[k] ?? KO[k] ?? k;
 
   function setLang(lang) {
     root.lang = lang;
-    const d = lang === 'en' ? EN : KO;
+    const d = DICTS[lang] || KO;
     $$('[data-i18n]').forEach(el => { const k = el.dataset.i18n; if (k in d) el.textContent = d[k]; });
     $$('[data-i18n-html]').forEach(el => { const k = el.dataset.i18nHtml; if (k in d) el.innerHTML = d[k]; });
     try { localStorage.setItem('mobelix-lang', lang); } catch (e) {}
   }
-  $('.lang').addEventListener('click', () => setLang(root.lang === 'en' ? 'ko' : 'en'));
+  $$('.lang [data-l]').forEach(b => b.addEventListener('click', () => setLang(b.dataset.l)));
 
   /* ---------- opening deal ends 2026-11-30 (KST) ---------- */
   if (Date.now() >= Date.parse('2026-12-01T00:00:00+09:00')) {
@@ -155,6 +240,8 @@
   /* ---------- boot ---------- */
   let saved = null;
   try { saved = localStorage.getItem('mobelix-lang'); } catch (e) {}
-  if (saved === 'en' || (!saved && !/^ko\b/i.test(navigator.language || 'ko'))) setLang('en');
+  const nav0 = (navigator.language || 'ko').slice(0, 2).toLowerCase();
+  const pick = saved in DICTS ? saved : (nav0 in DICTS ? nav0 : 'en');
+  if (pick !== 'ko') setLang(pick);
   requestAnimationFrame(() => requestAnimationFrame(() => root.classList.add('is-ready')));
 })();
