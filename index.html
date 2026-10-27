@@ -218,9 +218,17 @@
             <span class="ccard__hook" data-i18n="cs.cHook">벽화마을과 행궁마을길 골목 산책</span>
           </button>
         </div>
-        <ol class="stops" data-course="a"><li data-i18n="s.shop">MOBELIX 화성행궁점</li><li data-i18n="s.museum">수원시립미술관</li><li data-i18n="s.jangan">장안문</li><li data-i18n="s.hwaseo">화서문</li><li data-i18n="s.plaza">행궁광장</li></ol>
-        <ol class="stops" data-course="b" hidden><li data-i18n="s.hmuseum">수원화성박물관</li><li data-i18n="s.eocha">화성어차 승차장</li><li data-i18n="s.yeonmu">연무대</li><li data-i18n="s.hwahong">화홍문</li><li data-i18n="s.mural">행궁동 벽화마을</li><li data-i18n="s.church">북수동 성당</li></ol>
-        <ol class="stops" data-course="c" hidden><li data-i18n="s.plaza">행궁광장</li><li data-i18n="s.museum">수원시립미술관</li><li data-i18n="s.sinpung">신풍동 벽화마을</li><li data-i18n="s.village">행궁마을길</li><li data-i18n="s.hwaseo">화서문</li><li data-i18n="s.miro">미로한정</li><li data-i18n="s.plaza">행궁광장</li></ol>
+        <div class="stops-pop" data-stops-pop>
+          <div class="stops-pop__panel" role="dialog" aria-modal="true" aria-labelledby="stops-pop-title">
+            <div class="stops-pop__head">
+              <b class="stops-pop__title" id="stops-pop-title"></b>
+              <button class="stops-pop__x" type="button" data-stops-close><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg><span class="visually-hidden" data-i18n="ui.close">닫기</span></button>
+            </div>
+          <ol class="stops" data-course="a"><li data-i18n="s.shop">MOBELIX 화성행궁점</li><li data-i18n="s.museum">수원시립미술관</li><li data-i18n="s.jangan">장안문</li><li data-i18n="s.hwaseo">화서문</li><li data-i18n="s.plaza">행궁광장</li></ol>
+          <ol class="stops" data-course="b" hidden><li data-i18n="s.hmuseum">수원화성박물관</li><li data-i18n="s.eocha">화성어차 승차장</li><li data-i18n="s.yeonmu">연무대</li><li data-i18n="s.hwahong">화홍문</li><li data-i18n="s.mural">행궁동 벽화마을</li><li data-i18n="s.church">북수동 성당</li></ol>
+          <ol class="stops" data-course="c" hidden><li data-i18n="s.plaza">행궁광장</li><li data-i18n="s.museum">수원시립미술관</li><li data-i18n="s.sinpung">신풍동 벽화마을</li><li data-i18n="s.village">행궁마을길</li><li data-i18n="s.hwaseo">화서문</li><li data-i18n="s.miro">미로한정</li><li data-i18n="s.plaza">행궁광장</li></ol>
+          </div>
+        </div>
       </div>
       <div class="route__map" aria-label="코스 지도">
         <img class="is-on" data-course="a" src="assets/maps/course-a.webp" alt="코스 A 지도" width="2000" height="1500" loading="lazy">

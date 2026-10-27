@@ -8,7 +8,7 @@
   /* ---------- language: Korean lives in the HTML, English here ---------- */
   const EN = {
     'v.call': 'Call', 
-    'ui.pause': 'Pause video', 'ui.play': 'Play video', 'fr.click': '→ Tap', 'ui.spause': 'Pause slides', 'ui.splay': 'Play slides',
+    'ui.pause': 'Pause video', 'ui.play': 'Play video', 'fr.click': '→ Tap', 'ui.close': 'Close', 'ui.spause': 'Pause slides', 'ui.splay': 'Play slides',
     'branch': 'Hwaseong Haenggung',
     'nav.who': 'Who', 'nav.course': 'Courses', 'nav.price': 'Prices', 'nav.visit': 'Find us',
     'cta.find': 'Find a course', 'cta.findCourse': 'Find your course', 'cta.from': 'Opening deal, 1 hour', 'won': ' KRW',
@@ -52,7 +52,7 @@
   };
   const ZH = {
     'v.call': '拨打电话', 
-    'ui.pause': '暂停视频', 'ui.play': '播放视频', 'fr.click': '→ 点击', 'ui.spause': '暂停轮播', 'ui.splay': '播放轮播',
+    'ui.pause': '暂停视频', 'ui.play': '播放视频', 'fr.click': '→ 点击', 'ui.close': '关闭', 'ui.spause': '暂停轮播', 'ui.splay': '播放轮播',
     'branch': '华城行宫店',
     'nav.who': '和谁同行', 'nav.course': '路线', 'nav.price': '价格', 'nav.visit': '交通',
     'cta.find': '找路线', 'cta.findCourse': '找到适合你的路线', 'cta.from': '开业特惠 1小时', 'won': ' 韩元',
@@ -96,7 +96,7 @@
   };
   const JA = {
     'v.call': '電話する', 
-    'ui.pause': '動画を停止', 'ui.play': '動画を再生', 'fr.click': '→ クリック', 'ui.spause': 'スライドを停止', 'ui.splay': 'スライドを再生',
+    'ui.pause': '動画を停止', 'ui.play': '動画を再生', 'fr.click': '→ クリック', 'ui.close': '閉じる', 'ui.spause': 'スライドを停止', 'ui.splay': 'スライドを再生',
     'branch': '華城行宮店',
     'nav.who': '誰と', 'nav.course': 'コース', 'nav.price': '料金', 'nav.visit': 'アクセス',
     'cta.find': 'コースを探す', 'cta.findCourse': 'あなたに合うコースを探す', 'cta.from': 'オープン特価 1時間', 'won': ' ウォン',
@@ -223,7 +223,22 @@
     $$('.route__map img').forEach(m => m.classList.toggle('is-on', m.dataset.course === c));
     $$('.stops').forEach(o => { o.hidden = o.dataset.course !== c; });
   }
-  $$('.ccard').forEach(b => b.addEventListener('click', () => pickCourse(b.dataset.course)));
+  /* on phones a card tap lifts its stops into a popup with a close button */
+  const pop = $('[data-stops-pop]'), phone = matchMedia('(max-width: 40rem)');
+  let opener = null;
+  const closePop = () => { if (!pop.classList.contains('is-open')) return; pop.classList.remove('is-open'); document.body.classList.remove('is-locked'); opener?.focus(); };
+  $$('.ccard').forEach(b => b.addEventListener('click', () => {
+    pickCourse(b.dataset.course);
+    if (!phone.matches) return;
+    opener = b;
+    $('.stops-pop__title', pop).textContent = `${$('.ccard__letter', b).textContent}  ${$('b', b).textContent}`;
+    pop.classList.add('is-open'); document.body.classList.add('is-locked');
+    $('[data-stops-close]', pop).focus();
+  }));
+  $('[data-stops-close]', pop).addEventListener('click', closePop);
+  pop.addEventListener('click', e => { if (e.target === pop) closePop(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closePop(); });
+  phone.addEventListener('change', closePop);
   $$('.persona').forEach(a => a.addEventListener('click', () => pickCourse(a.dataset.course)));
 
   /* ---------- copy ---------- */
