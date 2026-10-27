@@ -233,13 +233,14 @@ html:not([lang="ko"]) .prow__p::before { content: "₩"; }
 .info dd { margin: 0; display: grid; gap: var(--space-2xs); color: var(--color-ink); font-size: var(--text-lg); font-weight: 500; }
 .info dd small { font-size: var(--text-sm); font-weight: 400; color: var(--color-muted); }
 .info dd a { justify-self: start; font-variant-numeric: tabular-nums; }
-.info dd:has(.copy) { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-sm); }
-.copy { min-height: 44px; padding: 0 var(--space-md); border: 1px solid var(--color-rule-2); border-radius: var(--radius-pill); background: transparent; color: var(--color-ink); font-size: var(--text-sm); font-weight: 500; cursor: pointer; transition: background-color var(--dur-short) var(--ease-out); }
-.copy:hover { background: var(--color-paper-2); }
-.copy:active { transform: translateY(1px); }
-.copy:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
+.info dd:has(.callbtn) { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-sm); }
+.callbtn { display: inline-flex; align-items: center; gap: var(--space-xs); min-height: 44px; padding: 0 var(--space-md); border: 1px solid var(--color-accent); border-radius: var(--radius-pill); background: var(--color-accent); color: var(--color-accent-ink); font-size: var(--text-sm); font-weight: 500; text-decoration: none; white-space: nowrap; transition: background-color var(--dur-short) var(--ease-out), border-color var(--dur-short) var(--ease-out); }
+.callbtn svg { width: 16px; height: 16px; fill: currentColor; flex-shrink: 0; }
+.callbtn:hover { background: var(--color-ink-2); border-color: var(--color-ink-2); }
+.callbtn:active { transform: translateY(1px); }
+.callbtn:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
 .maps { display: flex; flex-wrap: wrap; gap: var(--space-sm); margin-top: var(--space-xl); }
-.mapbtn { gap: var(--space-xs); font-weight: 700; }
+.mapbtn { gap: var(--space-xs); }
 .mapbtn__ico { width: 18px; height: 18px; flex-shrink: 0; fill: currentColor; }
 .mapbtn--naver { background: var(--brand-naver); border-color: var(--brand-naver); color: var(--brand-naver-ink); }
 .mapbtn--naver .mapbtn__ico { width: 14px; height: 14px; }
@@ -323,5 +324,5 @@ html:not([lang="ko"]) .prow__p::before { content: "₩"; }
 @media (prefers-reduced-motion: reduce) {
   .show__trike { transform: none; }
   .nav, .nav.is-tucked { transform: none; }
-  .btn, .lang button, .ccard, .persona, .copy, .fab, .toast, .loop-toggle, .route__map img, .feats li, .feats li::before { transition: none; }
+  .btn, .lang button, .ccard, .persona, .callbtn, .fab, .toast, .loop-toggle, .route__map img, .feats li, .feats li::before { transition: none; }
 }

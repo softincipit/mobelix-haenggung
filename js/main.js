@@ -7,6 +7,7 @@
 
   /* ---------- language: Korean lives in the HTML, English here ---------- */
   const EN = {
+    'v.call': 'Call', 
     'ui.pause': 'Pause video', 'ui.play': 'Play video',
     'branch': 'Hwaseong Haenggung',
     'nav.who': 'Who', 'nav.course': 'Courses', 'nav.price': 'Prices', 'nav.visit': 'Find us',
@@ -50,6 +51,7 @@
     'toast.copied': 'Copied'
   };
   const ZH = {
+    'v.call': '拨打电话', 
     'ui.pause': '暂停视频', 'ui.play': '播放视频',
     'branch': '华城行宫店',
     'nav.who': '和谁同行', 'nav.course': '路线', 'nav.price': '价格', 'nav.visit': '交通',
@@ -93,6 +95,7 @@
     'toast.copied': '已复制'
   };
   const JA = {
+    'v.call': '電話する', 
     'ui.pause': '動画を停止', 'ui.play': '動画を再生',
     'branch': '華城行宮店',
     'nav.who': '誰と', 'nav.course': 'コース', 'nav.price': '料金', 'nav.visit': 'アクセス',
