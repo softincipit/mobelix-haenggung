@@ -159,13 +159,9 @@
     $$('.prow__p').forEach(el => { el.textContent = el.dataset.normal; });
   }
 
-  /* ---------- hero video: wide on landscape screens, tall on portrait ones ---------- */
+  /* ---------- hero video: the same plaza clip on every screen ---------- */
   const vid = $('.hero video');
-  if (vid) {
-    const tall = matchMedia('(max-aspect-ratio: 1/1)').matches;
-    if (tall) vid.poster = vid.dataset.tallPoster;
-    if (!reduce) vid.src = tall ? vid.dataset.tall : vid.dataset.wide;
-  }
+  if (vid && !reduce) vid.src = vid.dataset.wide;
 
   /* ---------- nav: the banner retracts on the way down, returns on the way up ---------- */
   const nav = $('.nav'), hero = $('.hero');
