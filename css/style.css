@@ -158,6 +158,19 @@ html:not([lang="ko"]) .prow__p::before { content: "₩"; }
 .js .show__stage .slide.is-out { transform: translateX(100%); transition: transform var(--dur-slide) var(--ease-out); }
 html:not(.js) .show__stage .slide:not(:first-of-type) { display: none; }
 .show__stage .loop-toggle { top: auto; bottom: var(--space-md); right: var(--space-md); }
+.sdots { position: absolute; z-index: var(--z-raised); left: 50%; bottom: var(--space-md); transform: translateX(-50%); display: flex; align-items: center; padding: 0 var(--space-xs); border-radius: var(--radius-pill); background: var(--color-ink); }
+.sdot { position: relative; width: 24px; height: 44px; padding: 0; border: 0; background: transparent; cursor: pointer; }
+.sdot::before, .sdot i { content: ""; position: absolute; left: 6px; right: 6px; top: 18px; height: 8px; border-radius: var(--radius-pill); background: var(--on-ink-2); opacity: 0.55; }
+.sdot i { background: var(--on-ink); opacity: 1; transform: scaleX(0); transform-origin: 0 50%; }
+.sdot.is-on { width: 56px; }
+.sdot.is-on::before { opacity: 0.4; }
+.sdot.is-on i { transform: scaleX(1); }
+.is-run .sdot.is-on i { animation: sfill 3500ms linear both; }
+@keyframes sfill { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+.sdot:hover::before { opacity: 1; }
+.sdot:active i { opacity: 0.8; }
+.sdot:focus-visible { outline: 2px solid var(--on-ink); outline-offset: -6px; border-radius: var(--radius-pill); }
+html:not(.js) .sdots { display: none; }
 .show__text { padding-top: 0; }
 .feats { list-style: none; margin: var(--space-xl) 0 0; padding: 0; counter-reset: f; }
 .feats li { counter-increment: f; display: grid; grid-template-columns: 3rem minmax(0, 1fr); column-gap: var(--space-md); align-content: start; padding-block: var(--space-lg); border-top: 1px solid var(--color-rule); color: var(--color-ink-2); }
@@ -342,6 +355,8 @@ body { padding-bottom: calc(68px + env(safe-area-inset-bottom, 0px)); }
   .persona img { grid-row: 1 / 4; width: 160px; height: 120px; align-self: start; }
   body:has(.nav.is-solid) }
 @media (max-width: 40rem) {
+  .show__stage .loop-toggle { top: var(--space-sm); bottom: auto; right: var(--space-sm); }
+  .sdots { bottom: var(--space-xs); }
   .bento { padding-top: var(--space-md); }
   .bento__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: none; grid-auto-rows: minmax(170px, auto); gap: var(--space-sm); }
   .tile { padding: var(--space-md); }

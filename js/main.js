@@ -201,15 +201,33 @@
   $$('[data-slides]').forEach(el => {
     const imgs = $$('.slide', el), btn = $('[data-slides-toggle]', el);
     const s = { i: 0, seen: false, held: reduce, over: false, timer: 0 };
-    const step = () => {
-      const prev = imgs[s.i]; s.i = (s.i + 1) % imgs.length;
+    // indicator: one pill per photo, the current one fills until the next slide
+    const dots = document.createElement('div');
+    dots.className = 'sdots';
+    const refill = () => { const f = $('.sdot.is-on i', dots); f.style.animation = 'none'; void f.offsetWidth; f.style.animation = ''; };
+    const marks = imgs.map((m, k) => {
+      const d = document.createElement('button');
+      d.type = 'button'; d.className = 'sdot' + (k ? '' : ' is-on');
+      d.setAttribute('aria-label', `${k + 1} / ${imgs.length}`);
+      d.innerHTML = '<i></i>';
+      d.addEventListener('click', () => { if (k !== s.i) go(k); sync(); });
+      dots.append(d); return d;
+    });
+    el.append(dots);
+    const go = n => {
+      const prev = imgs[s.i]; s.i = n;
       imgs.forEach(m => m.classList.remove('is-out'));
       prev.classList.replace('is-on', 'is-out');
       imgs[s.i].classList.add('is-on');
+      marks.forEach((d, k) => d.classList.toggle('is-on', k === n));
     };
+    const step = () => { go((s.i + 1) % imgs.length); refill(); };
     const sync = () => {
       clearInterval(s.timer);
-      if (s.seen && !s.held && !s.over) s.timer = setInterval(step, 3500);
+      const run = s.seen && !s.held && !s.over;
+      if (run) s.timer = setInterval(step, 3500);
+      dots.classList.toggle('is-run', run);
+      refill();
       btn.dataset.i18n = s.held ? 'ui.splay' : 'ui.spause';
       btn.textContent = t(btn.dataset.i18n);
     };
