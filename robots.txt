@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mobelix-haenggung.netlify.app/sitemap.xml
