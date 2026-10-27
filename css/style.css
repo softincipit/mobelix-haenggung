@@ -218,6 +218,8 @@ html:not(.js) .show__stage .slide:not(:first-of-type) { display: none; }
 .freedom__head { display: flex; align-items: end; justify-content: space-between; gap: var(--space-lg); flex-wrap: wrap; }
 .freedom__ig { gap: var(--space-sm); font-size: var(--text-lg); border-color: var(--brand-ig-b); background: linear-gradient(45deg, var(--brand-ig-a), var(--brand-ig-b)); color: var(--brand-ig-ink); }
 .freedom__ig:hover { background: var(--brand-ig-b); }
+.freedom__cta { display: inline-flex; flex-wrap: wrap; align-items: center; gap: var(--space-sm); max-width: 100%; min-width: 0; }
+.freedom__hint { font-size: var(--text-lg); font-weight: 500; color: var(--brand-ig-b); white-space: nowrap; }
 .freedom__ig svg { flex: none; }
 .rail { margin-top: var(--space-2xl); }
 .rail__track { display: flex; gap: var(--space-md); overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-x: contain; padding-inline: max(var(--gutter), calc((100% - var(--container)) / 2 + var(--gutter))); padding-bottom: var(--space-md); scrollbar-width: thin; }
