@@ -7,132 +7,135 @@
 
   /* ---------- language: Korean lives in the HTML, English here ---------- */
   const EN = {
+    'ui.pause': 'Pause video', 'ui.play': 'Play video',
     'branch': 'Hwaseong Haenggung',
     'nav.who': 'Who', 'nav.course': 'Courses', 'nav.price': 'Prices', 'nav.visit': 'Find us',
-    'cta.find': 'Find a course', 'cta.findCourse': 'Find your course', 'cta.from': 'Opening deal · 1 hour', 'won': ' KRW',
-    'hero.kicker': 'Suwon Hwaseong Haenggung · Electric trike rental',
+    'cta.find': 'Find a course', 'cta.findCourse': 'Find your course', 'cta.from': 'Opening deal, 1 hour', 'won': ' KRW',
+    'hero.kicker': 'Electric trike rental in front of Hwaseong Haenggung, Suwon.',
     'hero.t1': 'Ride the palace', 'hero.t2': 'on four wheels',
     'verb.1': 'Ride', 'verb.2': 'See', 'verb.3': 'Snap', 'verb.4': 'Relax',
     'st.eyebrow': 'MOBELIX Hwaseong Haenggung',
-    'st.title': 'Too far to walk, too narrow to drive.<br>The easiest way around <em>Hwaseong Fortress</em>, a UNESCO World Heritage site.',
+    'st.title': 'Too far to walk, too narrow to drive.<br>The easiest way around Hwaseong Fortress, a UNESCO World Heritage site.',
     'st.lead': 'Four wheels that never tip over, an electric motor that flattens every hill, and a rear basket for bags and even your dog. First-time riders set off right from our door.',
     'b.age': 'Ages 13+', 'b.helmet': 'Free helmet', 'b.wheels': 'Four-wheel e-trike', 'b.spots': 'Landmarks in one ride',
-    'sh.eyebrow': 'THE TRIKE', 'sh.title': 'Why it feels easy<br><em>from the first ride</em>',
+    'sh.eyebrow': 'THE TRIKE', 'sh.title': 'Why it feels easy<br>from the first ride',
     'sh.1t': 'Steady on four wheels', 'sh.1': 'It stands on its own when you stop. Watch the view, not your balance.',
     'sh.2t': 'Light with an e-motor', 'sh.2': 'One push of the pedal carries you up the fortress slopes.',
     'sh.3t': 'Room in the back', 'sh.3': 'Bags, snacks, even a small dog fit in the rear basket.',
-    'ps.title': 'Who are you <em>riding with?</em>', 'ps.lead': 'We suggest a different route depending on who comes along.',
-    'ps.1tag': 'With family', 'ps.1': '"Kids and grandparents ride together, no balance worries."', 'ps.1cta': 'Family route →',
-    'ps.2tag': 'As a couple', 'ps.2': '"Mural lanes and café alleys of Haengridan-gil, at your own pace."', 'ps.2cta': 'Alley route →',
-    'ps.3tag': 'With your dog', 'ps.3': '"Pop them in the basket and roll along the Suwoncheon stream."', 'ps.3cta': 'Stream route →',
-    'ps.4tag': 'First visit', 'ps.4': '"Janganmun and Hwaseomun, the fortress highlights in one loop."', 'ps.4cta': 'Highlights route →',
-    'cs.title': 'Three routes <em>from our door</em>', 'cs.lead': 'Tap a card to change the map and stops.',
+    'ps.title': 'Who are you riding with?', 'ps.lead': 'We suggest a different route depending on who comes along.',
+    'ps.1tag': 'With family', 'ps.1': '"Kids and grandparents ride together, no balance worries."', 'ps.1cta': 'Family route',
+    'ps.2tag': 'As a couple', 'ps.2': '"Mural lanes and café alleys of Haengridan-gil, at your own pace."', 'ps.2cta': 'Alley route',
+    'ps.3tag': 'With your dog', 'ps.3': '"Pop them in the basket and roll along the Suwoncheon stream."', 'ps.3cta': 'Stream route',
+    'ps.4tag': 'First visit', 'ps.4': '"Janganmun and Hwaseomun, the fortress highlights in one loop."', 'ps.4cta': 'Highlights route',
+    'cs.title': 'Three routes from our door', 'cs.lead': 'Tap a card to change the map and stops.',
     'cs.aTag': 'Best for first-timers', 'cs.aName': 'North Gates', 'cs.aHook': 'Janganmun and Hwaseomun, the face of the fortress',
-    'cs.bTag': 'Best with a dog', 'cs.bName': 'Suwoncheon · Hwahongmun', 'cs.bHook': 'Where the stream meets the fortress wall',
+    'cs.bTag': 'Best with a dog', 'cs.bName': 'Suwoncheon and Hwahongmun', 'cs.bHook': 'Where the stream meets the fortress wall',
     'cs.cTag': 'Best for families & couples', 'cs.cName': 'Palace Loop', 'cs.cHook': 'Mural villages and village lanes',
     's.shop': 'MOBELIX Hwaseong Haenggung', 's.museum': 'Suwon Museum of Art', 's.jangan': 'Janganmun Gate', 's.hwaseo': 'Hwaseomun Gate', 's.plaza': 'Haenggung Plaza',
     's.hmuseum': 'Suwon Hwaseong Museum', 's.eocha': 'Hwaseong Eocha tour-train stop', 's.yeonmu': 'Yeonmudae', 's.hwahong': 'Hwahongmun Gate', 's.mural': 'Haenggung-dong Mural Village', 's.church': 'Buksu-dong Cathedral',
     's.sinpung': 'Sinpung-dong Mural Village', 's.village': 'Haenggung Village Road', 's.miro': 'Mirohanjeong Pavilion',
     'band.text': '<b>Groups and families</b>: call ahead and we will have several trikes ready.', 'band.cta': 'Group booking',
-    'pr.title': 'Prices', 'pr.promo': 'Opening deal until November 30, 2026 · per trike',
+    'pr.title': 'Prices', 'pr.promo': 'Opening deal until November 30, 2026, per trike.',
     'pr.h1': '1 hour', 'pr.h2': '2 hours', 'pr.best': 'Popular', 'pr.ask': 'Call to rent',
-    'pr.note': 'From December 1, regular prices apply (1 hour ₩20,000 · 2 hours ₩35,000).',
+    'pr.note': 'From December 1, regular prices apply: ₩20,000 for 1 hour, ₩35,000 for 2 hours.',
     'r.title': 'Before you ride', 'r.age': 'Age', 'r.ageV': 'Riders 13 and older', 'r.id': 'ID', 'r.idV': 'Please show a photo ID',
     'r.helmet': 'Helmet', 'r.helmetV': 'Free with every rental', 'r.weather': 'Weather', 'r.weatherV': 'Closed on rainy days',
-    'r.pay': 'Payment', 'r.payV': 'Card (Toss Payments) · Cash',
-    'fr.title': 'That feeling of <em>freedom</em>',
-    'v.title': 'Right across from<br><em>Jeongjo Theme Theater</em>',
+    'r.pay': 'Payment', 'r.payV': 'Card (Toss Payments) or cash',
+    'fr.title': 'That feeling of freedom',
+    'v.title': 'Right across from<br>Jeongjo Theme Theater',
     'v.addr': 'Address', 'v.addrV': '814 Jeongjo-ro, Paldal-gu, Suwon, Gyeonggi-do', 'v.near': 'Next to Haenggung Care Home',
-    'v.hours': 'Hours', 'v.hoursV': 'Daily 10:00–19:00', 'v.winter': 'Winter (from November) 10:00–17:00 · closed when raining',
+    'v.hours': 'Hours', 'v.hoursV': 'Daily 10:00~19:00', 'v.winter': 'Winter (from November) 10:00~17:00, closed when raining',
     'v.tel': 'Phone', 'v.copy': 'Copy', 'm.naver': 'Naver Map', 'm.kakao': 'Kakao Map', 'm.google': 'Google Maps',
-    'f.addr': '814 Jeongjo-ro, Paldal-gu, Suwon · +82-31-252-0582', 'f.hours': 'Daily 10:00–19:00 (winter from Nov 10:00–17:00) · closed when raining',
+    'f.addr': '814 Jeongjo-ro, Paldal-gu, Suwon. Tel +82-31-252-0582', 'f.hours': 'Daily 10:00~19:00, winter from November 10:00~17:00, closed when raining',
     'toast.copied': 'Copied'
   };
   const ZH = {
+    'ui.pause': '暂停视频', 'ui.play': '播放视频',
     'branch': '华城行宫店',
     'nav.who': '和谁同行', 'nav.course': '路线', 'nav.price': '价格', 'nav.visit': '交通',
-    'cta.find': '找路线', 'cta.findCourse': '找到适合你的路线', 'cta.from': '开业特惠 · 1小时', 'won': ' 韩元',
-    'hero.kicker': '水原华城行宫 · 四轮电动自行车租赁',
+    'cta.find': '找路线', 'cta.findCourse': '找到适合你的路线', 'cta.from': '开业特惠 1小时', 'won': ' 韩元',
+    'hero.kicker': '水原华城行宫前的四轮电动自行车租赁。',
     'hero.t1': '骑四轮车', 'hero.t2': '游华城行宫',
     'verb.1': '骑行', 'verb.2': '观赏', 'verb.3': '拍照', 'verb.4': '休憩',
     'st.eyebrow': 'MOBELIX 华城行宫店',
-    'st.title': '步行太远，开车进不去。<br>游览世界遗产<em>水原华城</em>最轻松的方式。',
+    'st.title': '步行太远，开车进不去。<br>游览世界遗产水原华城最轻松的方式。',
     'st.lead': '四个轮子稳稳不倒，电动助力轻松上坡，后筐能装包包甚至小狗。第一次骑也能从店门口直接出发。',
     'b.age': '13岁以上', 'b.helmet': '免费头盔', 'b.wheels': '四轮电动自行车', 'b.spots': '一次游遍景点',
-    'sh.eyebrow': 'THE TRIKE', 'sh.title': '第一次骑<br><em>也很轻松的理由</em>',
+    'sh.eyebrow': 'THE TRIKE', 'sh.title': '第一次骑<br>也很轻松的理由',
     'sh.1t': '四轮，稳稳当当', 'sh.1': '停下来也不会倒。不用担心平衡，专心看风景。',
     'sh.2t': '电动助力，轻松省力', 'sh.2': '城墙边的上坡，踩一下就上去了。',
     'sh.3t': '后筐装得下', 'sh.3': '包包、零食，连小狗都能放进去。',
-    'ps.title': '你和<em>谁一起骑？</em>', 'ps.lead': '同行的人不同，推荐的路线也不同。',
-    'ps.1tag': '家庭出游', 'ps.1': '"孩子和长辈都能一起骑，不用担心平衡。"', 'ps.1cta': '家庭路线 →',
-    'ps.2tag': '情侣 · 朋友', 'ps.2': '"壁画村和行理团路的咖啡小巷，两个人慢慢逛。"', 'ps.2cta': '小巷路线 →',
-    'ps.3tag': '带着狗狗', 'ps.3': '"放进后筐，沿着水原川像散步一样骑行。"', 'ps.3cta': '水边路线 →',
-    'ps.4tag': '第一次来', 'ps.4': '"长安门和华西门，华城的代表风景一次看完。"', 'ps.4cta': '经典路线 →',
-    'cs.title': '从店门口出发的<em>三条路线</em>', 'cs.lead': '点击卡片，地图和途经地点会随之切换。',
+    'ps.title': '你和谁一起骑？', 'ps.lead': '同行的人不同，推荐的路线也不同。',
+    'ps.1tag': '家庭出游', 'ps.1': '"孩子和长辈都能一起骑，不用担心平衡。"', 'ps.1cta': '家庭路线',
+    'ps.2tag': '情侣或朋友', 'ps.2': '"壁画村和行理团路的咖啡小巷，两个人慢慢逛。"', 'ps.2cta': '小巷路线',
+    'ps.3tag': '带着狗狗', 'ps.3': '"放进后筐，沿着水原川像散步一样骑行。"', 'ps.3cta': '水边路线',
+    'ps.4tag': '第一次来', 'ps.4': '"长安门和华西门，华城的代表风景一次看完。"', 'ps.4cta': '经典路线',
+    'cs.title': '从店门口出发的三条路线', 'cs.lead': '点击卡片，地图和途经地点会随之切换。',
     'cs.aTag': '推荐初次来访', 'cs.aName': '城郭北门路线', 'cs.aHook': '长安门与华西门，华城的门面',
-    'cs.bTag': '推荐带狗狗', 'cs.bName': '水原川 · 华虹门', 'cs.bHook': '溪水与城墙相遇的风景',
-    'cs.cTag': '推荐家庭 · 情侣', 'cs.cName': '行宫环游路线', 'cs.cHook': '壁画村与行宫村小巷',
+    'cs.bTag': '推荐带狗狗', 'cs.bName': '水原川与华虹门', 'cs.bHook': '溪水与城墙相遇的风景',
+    'cs.cTag': '推荐家庭和情侣', 'cs.cName': '行宫环游路线', 'cs.cHook': '壁画村与行宫村小巷',
     's.shop': 'MOBELIX 华城行宫店', 's.museum': '水原市立美术馆', 's.jangan': '长安门', 's.hwaseo': '华西门', 's.plaza': '行宫广场',
     's.hmuseum': '水原华城博物馆', 's.eocha': '华城御车乘车处', 's.yeonmu': '练武台', 's.hwahong': '华虹门', 's.mural': '行宫洞壁画村', 's.church': '北水洞圣堂',
     's.sinpung': '新丰洞壁画村', 's.village': '行宫村小路', 's.miro': '迷鲁閑亭',
     'band.text': '<b>团体或多人租车</b>请提前联系，我们会为您备好车辆。', 'band.cta': '团体租车咨询',
-    'pr.title': '价格', 'pr.promo': '开业特惠至2026年11月30日 · 每辆车',
+    'pr.title': '价格', 'pr.promo': '开业特惠至2026年11月30日，按每辆车计。',
     'pr.h1': '1小时', 'pr.h2': '2小时', 'pr.best': '推荐', 'pr.ask': '租车咨询',
-    'pr.note': '12月1日起恢复原价（1小时 ₩20,000 · 2小时 ₩35,000）。',
+    'pr.note': '12月1日起恢复原价：1小时 ₩20,000，2小时 ₩35,000。',
     'r.title': '骑行前请确认', 'r.age': '年龄', 'r.ageV': '13岁以上可自行驾驶', 'r.id': '证件', 'r.idV': '租车时请出示身份证件（护照）',
     'r.helmet': '头盔', 'r.helmetV': '免费提供', 'r.weather': '天气', 'r.weatherV': '雨天停业',
-    'r.pay': '付款', 'r.payV': '银行卡（Toss Payments）· 现金',
-    'fr.title': '行宫前，那份<em>自由的心情</em>',
-    'v.title': '正祖主题剧场<br><em>正对面</em>',
+    'r.pay': '付款', 'r.payV': '银行卡（Toss Payments）或现金',
+    'fr.title': '行宫前，那份自由的心情',
+    'v.title': '正祖主题剧场<br>正对面',
     'v.addr': '地址', 'v.addrV': '京畿道水原市八达区正祖路814', 'v.near': '行宫疗养院旁边的建筑',
-    'v.hours': '营业时间', 'v.hoursV': '每天 10:00–19:00', 'v.winter': '冬季（11月起）10:00–17:00 · 雨天停业',
+    'v.hours': '营业时间', 'v.hoursV': '每天 10:00~19:00', 'v.winter': '冬季（11月起）10:00~17:00，雨天停业',
     'v.tel': '电话', 'v.copy': '复制', 'm.naver': 'Naver地图', 'm.kakao': 'Kakao地图', 'm.google': 'Google地图',
-    'f.addr': '京畿道水原市八达区正祖路814 · +82-31-252-0582', 'f.hours': '每天 10:00–19:00（冬季11月起 10:00–17:00）· 雨天停业',
+    'f.addr': '京畿道水原市八达区正祖路814，电话 +82-31-252-0582', 'f.hours': '每天 10:00~19:00（冬季11月起 10:00~17:00），雨天停业',
     'toast.copied': '已复制'
   };
   const JA = {
+    'ui.pause': '動画を停止', 'ui.play': '動画を再生',
     'branch': '華城行宮店',
     'nav.who': '誰と', 'nav.course': 'コース', 'nav.price': '料金', 'nav.visit': 'アクセス',
     'cta.find': 'コースを探す', 'cta.findCourse': 'あなたに合うコースを探す', 'cta.from': 'オープン特価 1時間', 'won': ' ウォン',
-    'hero.kicker': '水原華城行宮 · 四輪電動自転車レンタル',
+    'hero.kicker': '水原華城行宮の前で、四輪電動自転車をレンタル。',
     'hero.t1': '四輪で', 'hero.t2': '行宮を走る',
     'verb.1': '乗る', 'verb.2': '見る', 'verb.3': '撮る', 'verb.4': '休む',
     'st.eyebrow': 'MOBELIX 華城行宮店',
-    'st.title': '歩くには広く、車では入れない道。<br>世界遺産<em>水原華城</em>をいちばん気軽にめぐる方法。',
+    'st.title': '歩くには広く、車では入れない道。<br>世界遺産水原華城をいちばん気軽にめぐる方法。',
     'st.lead': '倒れない四つの車輪、坂道もすいすいの電動アシスト、バッグや小型犬も乗せられる後ろのカゴ。初めての方もお店の前からすぐ出発できます。',
     'b.age': '13歳以上', 'b.helmet': 'ヘルメット無料', 'b.wheels': '四輪電動自転車', 'b.spots': '名所を一度に',
-    'sh.eyebrow': 'THE TRIKE', 'sh.title': '初めてでも<br><em>ラクに乗れる理由</em>',
+    'sh.eyebrow': 'THE TRIKE', 'sh.title': '初めてでも<br>ラクに乗れる理由',
     'sh.1t': '四輪で安定', 'sh.1': '止まっても倒れません。バランスより景色に集中できます。',
     'sh.2t': '電動アシストで軽やか', 'sh.2': '城壁沿いの上り坂もペダルひと踏みでスイスイ。',
     'sh.3t': '荷物は後ろのカゴへ', 'sh.3': 'バッグ、おやつ、小型犬までゆったり乗せられます。',
-    'ps.title': '誰と一緒に<em>走りますか？</em>', 'ps.lead': '一緒に行く人によって、おすすめコースが変わります。',
-    'ps.1tag': 'ご家族で', 'ps.1': '"子どももご両親も、バランスの心配なく一緒に走れます。"', 'ps.1cta': 'ファミリーコース →',
-    'ps.2tag': 'カップル · 友だちと', 'ps.2': '"壁画村と行理団キルのカフェ路地を、ふたりでゆっくり。"', 'ps.2cta': '路地コース →',
-    'ps.3tag': 'ワンちゃんと', 'ps.3': '"後ろのカゴにすっぽり。水原川沿いを散歩するように。"', 'ps.3cta': '川沿いコース →',
-    'ps.4tag': '初めての旅行者', 'ps.4': '"長安門と華西門、華城の名場面をまとめて。"', 'ps.4cta': '定番コース →',
-    'cs.title': 'お店から出発する<em>3つのコース</em>', 'cs.lead': 'カードを押すと、地図と立ち寄りスポットが切り替わります。',
+    'ps.title': '誰と一緒に走りますか？', 'ps.lead': '一緒に行く人によって、おすすめコースが変わります。',
+    'ps.1tag': 'ご家族で', 'ps.1': '"子どももご両親も、バランスの心配なく一緒に走れます。"', 'ps.1cta': 'ファミリーコース',
+    'ps.2tag': 'カップルや友だちと', 'ps.2': '"壁画村と行理団キルのカフェ路地を、ふたりでゆっくり。"', 'ps.2cta': '路地コース',
+    'ps.3tag': 'ワンちゃんと', 'ps.3': '"後ろのカゴにすっぽり。水原川沿いを散歩するように。"', 'ps.3cta': '川沿いコース',
+    'ps.4tag': '初めての旅行者', 'ps.4': '"長安門と華西門、華城の名場面をまとめて。"', 'ps.4cta': '定番コース',
+    'cs.title': 'お店から出発する3つのコース', 'cs.lead': 'カードを押すと、地図と立ち寄りスポットが切り替わります。',
     'cs.aTag': '初めての方におすすめ', 'cs.aName': '城郭北門コース', 'cs.aHook': '長安門と華西門、華城の顔に出会う道',
-    'cs.bTag': 'ワンちゃん連れにおすすめ', 'cs.bName': '水原川 · 華虹門', 'cs.bHook': '流れと城壁が出会う風景',
-    'cs.cTag': 'ご家族 · カップルにおすすめ', 'cs.cName': '行宮ひとめぐりコース', 'cs.cHook': '壁画村と行宮村の路地散策',
+    'cs.bTag': 'ワンちゃん連れにおすすめ', 'cs.bName': '水原川と華虹門', 'cs.bHook': '流れと城壁が出会う風景',
+    'cs.cTag': 'ご家族やカップルにおすすめ', 'cs.cName': '行宮ひとめぐりコース', 'cs.cHook': '壁画村と行宮村の路地散策',
     's.shop': 'MOBELIX 華城行宮店', 's.museum': '水原市立美術館', 's.jangan': '長安門', 's.hwaseo': '華西門', 's.plaza': '行宮広場',
     's.hmuseum': '水原華城博物館', 's.eocha': '華城御車 乗り場', 's.yeonmu': '練武台', 's.hwahong': '華虹門', 's.mural': '行宮洞 壁画村', 's.church': '北水洞聖堂',
     's.sinpung': '新豊洞 壁画村', 's.village': '行宮村の小道', 's.miro': '美魯閑亭',
     'band.text': '<b>団体・ご家族で複数台</b>のときは、事前にご連絡いただければご用意しておきます。', 'band.cta': '団体レンタルのお問い合わせ',
-    'pr.title': '料金', 'pr.promo': 'オープン特価 2026年11月30日まで · 1台あたり',
+    'pr.title': '料金', 'pr.promo': 'オープン特価は2026年11月30日まで、1台あたりの料金です。',
     'pr.h1': '1時間', 'pr.h2': '2時間', 'pr.best': 'おすすめ', 'pr.ask': 'お問い合わせ',
-    'pr.note': '12月1日から通常料金（1時間 ₩20,000 · 2時間 ₩35,000）になります。',
+    'pr.note': '12月1日から通常料金（1時間 ₩20,000、2時間 ₩35,000）になります。',
     'r.title': 'ご利用前にご確認ください', 'r.age': '年齢', 'r.ageV': '13歳以上がご自身で運転', 'r.id': '身分証', 'r.idV': 'レンタル時に必ずご提示ください（パスポート可）',
     'r.helmet': 'ヘルメット', 'r.helmetV': '無料でお貸しします', 'r.weather': '天気', 'r.weatherV': '雨の日はお休み',
-    'r.pay': 'お支払い', 'r.payV': 'カード（Toss Payments）· 現金',
-    'fr.title': '行宮の前で、あの<em>自由な気分</em>',
-    'v.title': '正祖テーマ公演場<br><em>のすぐ向かい</em>',
+    'r.pay': 'お支払い', 'r.payV': 'カード（Toss Payments）または現金',
+    'fr.title': '行宮の前で、あの自由な気分',
+    'v.title': '正祖テーマ公演場<br>のすぐ向かい',
     'v.addr': '住所', 'v.addrV': '京畿道水原市八達区正祖路814', 'v.near': '行宮療養院のとなりの建物',
-    'v.hours': '営業時間', 'v.hoursV': '毎日 10:00–19:00', 'v.winter': '冬季（11月〜）10:00–17:00 · 雨の日はお休み',
+    'v.hours': '営業時間', 'v.hoursV': '毎日 10:00~19:00', 'v.winter': '冬季（11月〜）10:00~17:00、雨の日はお休み',
     'v.tel': '電話', 'v.copy': 'コピー', 'm.naver': 'Naverマップ', 'm.kakao': 'Kakaoマップ', 'm.google': 'Googleマップ',
-    'f.addr': '京畿道水原市八達区正祖路814 · +82-31-252-0582', 'f.hours': '毎日 10:00–19:00（冬季11月〜 10:00–17:00）· 雨の日はお休み',
+    'f.addr': '京畿道水原市八達区正祖路814、電話 +82-31-252-0582', 'f.hours': '毎日 10:00~19:00（冬季11月〜 10:00~17:00）、雨の日はお休み',
     'toast.copied': 'コピーしました'
   };
-  const KO = { 'toast.copied': '복사했어요' };
+  const KO = { 'toast.copied': '복사했어요', 'ui.play': '영상 재생' };
   $$('[data-i18n]').forEach(el => { KO[el.dataset.i18n] ??= el.textContent; });
   $$('[data-i18n-html]').forEach(el => { KO[el.dataset.i18nHtml] ??= el.innerHTML; });
   const DICTS = { ko: KO, en: EN, zh: ZH, ja: JA };
@@ -153,33 +156,26 @@
     $$('.prow__p').forEach(el => { el.textContent = el.dataset.normal; });
   }
 
-  /* ---------- hero slideshow ---------- */
-  const slides = $$('.hero__slides > *'), dots = $$('.hero__dots button');
-  const vid = $('.hero__slides video');
+  /* ---------- hero video: wide on landscape screens, tall on portrait ones ---------- */
+  const vid = $('.hero video');
   if (vid) {
     const tall = matchMedia('(max-aspect-ratio: 1/1)').matches;
     if (tall) vid.poster = vid.dataset.tallPoster;
-    if (!reduce) { vid.src = tall ? vid.dataset.tall : vid.dataset.wide; vid.play().catch(() => {}); }
+    if (!reduce) vid.src = tall ? vid.dataset.tall : vid.dataset.wide;
   }
-  const dwell = el => (el.tagName === 'VIDEO' && !reduce ? 12000 : 6000);
-  dots.forEach((d, i) => d.style.setProperty('--d', dwell(slides[i]) + 'ms'));
-  let cur = 0, timer;
-  function show(i) {
-    slides[cur].classList.remove('is-on'); dots[cur].classList.remove('is-on');
-    cur = (i + slides.length) % slides.length;
-    slides[cur].classList.add('is-on');
-    void dots[cur].offsetWidth; dots[cur].classList.add('is-on');
-    clearTimeout(timer); if (!reduce) timer = setTimeout(() => show(cur + 1), dwell(slides[cur]));
-  }
-  dots.forEach((d, i) => d.addEventListener('click', () => show(i)));
-  if (!reduce) timer = setTimeout(() => show(1), dwell(slides[0]));
 
-  /* ---------- nav ---------- */
+  /* ---------- nav: the banner retracts on the way down, returns on the way up ---------- */
   const nav = $('.nav'), hero = $('.hero');
-  const onScroll = () => nav.classList.toggle('is-solid', scrollY > hero.offsetHeight - 90);
+  let lastY = scrollY;
+  const onScroll = () => {
+    const y = scrollY;
+    nav.classList.toggle('is-solid', y > hero.offsetHeight - 90);
+    nav.classList.toggle('is-tucked', y > 120 && y > lastY);
+    lastY = y;
+  };
 
-  /* ---------- trike showcase: scroll drives rotation + feature steps ---------- */
-  const showSec = $('.show'), trike = $('.show__trike'), feats = $$('.feats li'), hots = $$('.hot');
+  /* ---------- trike showcase: scroll drives the trike and the feature steps ---------- */
+  const showSec = $('.show'), trike = $('.show__trike'), feats = $$('.feats li');
   function onShow() {
     if (!showSec || getComputedStyle($('.show__sticky')).position !== 'sticky') return;
     const r = showSec.getBoundingClientRect(), span = r.height - innerHeight;
@@ -187,9 +183,7 @@
     trike.style.setProperty('--p', p.toFixed(3));
     const step = p < .34 ? 0 : p < .67 ? 1 : 2;
     feats.forEach((f, i) => f.classList.toggle('is-on', i === step));
-    hots.forEach((h, i) => h.classList.toggle('is-on', i === step));
   }
-  hots[0] && hots[0].classList.add('is-on');
 
   let ticking = false;
   addEventListener('scroll', () => {
@@ -198,36 +192,29 @@
   }, { passive: true });
   onScroll();
 
-  /* ---------- reveal: only things below the fold wait, everything is visible at rest ---------- */
-  if (!reduce && 'IntersectionObserver' in window) {
-    const io = new IntersectionObserver(es => es.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.remove('is-wait'); io.unobserve(e.target); }
-    }), { rootMargin: '0px 0px -8% 0px' });
-    $$('.reveal').forEach((el, i) => {
-      if (el.getBoundingClientRect().top > innerHeight) {
-        el.classList.add('is-wait');
-        el.style.transitionDelay = (i % 4) * 90 + 'ms';
-        io.observe(el);
-      }
-    });
-  }
+  /* ---------- loops: videos play while on screen; the button holds them ---------- */
+  $$('[data-loop]').forEach(el => {
+    const btn = $('[data-loop-toggle]', el);
+    const s = { seen: false, held: reduce };
+    const sync = () => {
+      const run = s.seen && !s.held;
+      el.classList.toggle('is-running', run);
+      $$('video', el).forEach(v => { if (run) { v.preload = 'auto'; v.play().catch(() => {}); } else v.pause(); });
+      btn.dataset.i18n = s.held ? 'ui.play' : 'ui.pause';
+      btn.textContent = t(btn.dataset.i18n);
+    };
+    btn.addEventListener('click', () => { s.held = !s.held; sync(); });
+    new IntersectionObserver(([e]) => { s.seen = e.isIntersecting; sync(); }, { threshold: .25 }).observe(el);
+  });
 
   /* ---------- courses ---------- */
   function pickCourse(c) {
     $$('.ccard').forEach(b => { const on = b.dataset.course === c; b.classList.toggle('is-on', on); b.setAttribute('aria-selected', on); });
     $$('.route__map img').forEach(m => m.classList.toggle('is-on', m.dataset.course === c));
     $$('.stops').forEach(o => { o.hidden = o.dataset.course !== c; });
-    $$(`.stops[data-course="${c}"] li`).forEach((li, i) => { li.style.setProperty('--i', i); li.style.animation = 'none'; void li.offsetWidth; li.style.animation = ''; });
   }
   $$('.ccard').forEach(b => b.addEventListener('click', () => pickCourse(b.dataset.course)));
   $$('.persona').forEach(a => a.addEventListener('click', () => pickCourse(a.dataset.course)));
-
-  /* ---------- videos play only on screen ---------- */
-  const vio = new IntersectionObserver(es => es.forEach(e => {
-    const v = e.target;
-    if (e.isIntersecting && !reduce) { v.preload = 'auto'; v.play().catch(() => {}); } else v.pause();
-  }), { threshold: .3 });
-  $$('video').forEach(v => vio.observe(v));
 
   /* ---------- copy ---------- */
   const toast = $('.toast');

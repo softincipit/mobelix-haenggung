@@ -1,0 +1,35 @@
+[
+ {
+  "mode": "redesign",
+  "depth": "full",
+  "scope": "page",
+  "shape": "Marquee Hero",
+  "theme": "garden",
+  "axes": "light/roman-serif/chromatic-green",
+  "hero": "Ledge",
+  "nav": "banner over a retracting bar",
+  "footer": "colophon block",
+  "imagery": "owner photographs and footage, trike cutout, course maps",
+  "photos": [],
+  "entry": "statement",
+  "fingerprint": "ledge-video/statement-figures/price-poster/pinned/rows/switcher/rail/band-ink/split",
+  "sections": [
+   "hero",
+   "statement",
+   "price",
+   "pinned",
+   "rows",
+   "switcher",
+   "rail",
+   "band",
+   "split",
+   "footer"
+  ],
+  "signature": "opening price 15,000 at poster size",
+  "waived": [
+   "23"
+  ],
+  "prompt": "four-wheel electric trike rental shop across from Hwaseong Haenggung palace in Suwon",
+  "date": "2026-10-27"
+ }
+]
