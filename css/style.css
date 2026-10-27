@@ -33,6 +33,7 @@
   --text-price: clamp(4.25rem, 9.5vw, 9rem);
   --text-figure: clamp(4rem, 9vw, 8rem);
   --dur-slide: 900ms;
+  --brand-ig-a: #D62976; --brand-ig-b: #BC1888; --brand-ig-ink: var(--color-accent-ink);
   --stage-trike: oklch(68% 0.07 142);
   --brand-naver: #00783A; --brand-naver-ink: var(--color-accent-ink);
   --brand-kakao: #FEE500; --brand-kakao-ink: #191600;
@@ -215,7 +216,8 @@ html:not(.js) .show__stage .slide:not(:first-of-type) { display: none; }
 /* the rail: the owner's footage and photographs, scrolled by hand */
 .freedom { padding-block: var(--section-gap-s) var(--section-gap); }
 .freedom__head { display: flex; align-items: end; justify-content: space-between; gap: var(--space-lg); flex-wrap: wrap; }
-.freedom__ig { gap: var(--space-sm); font-size: var(--text-lg); }
+.freedom__ig { gap: var(--space-sm); font-size: var(--text-lg); border-color: var(--brand-ig-b); background: linear-gradient(45deg, var(--brand-ig-a), var(--brand-ig-b)); color: var(--brand-ig-ink); }
+.freedom__ig:hover { background: var(--brand-ig-b); }
 .freedom__ig svg { flex: none; }
 .rail { margin-top: var(--space-2xl); }
 .rail__track { display: flex; gap: var(--space-md); overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-x: contain; padding-inline: max(var(--gutter), calc((100% - var(--container)) / 2 + var(--gutter))); padding-bottom: var(--space-md); scrollbar-width: thin; }
