@@ -8,7 +8,7 @@
   /* ---------- language: Korean lives in the HTML, English here ---------- */
   const EN = {
     'v.call': 'Call', 
-    'ui.pause': 'Pause video', 'ui.play': 'Play video', 'at.t1': 'Pick your ride', 'at.t2': 'on the palace map', 'at.until': 'until 30 November', 'bar.addr': '814 Jeongjo-ro, next to Haenggung Care Home', 'bar.ageK': 'Riders', 'bar.age': '13 and up, closed in rain', 'bar.go': 'Directions', 'st.shop': 'Pick up a helmet and set off from the shop.', 'st.museum': 'Pass the city art museum beside the plaza.', 'st.jangan': 'The north main gate of Hwaseong Fortress.', 'st.hwaseo': 'Ride along the wall to the west gate.', 'st.plaza': 'Back to the wide square in front of the palace.', 'st.hmuseum': 'The museum of the fortress and its history.', 'st.eocha': 'Pass the stop for the Hwaseong tour tram.', 'st.yeonmu': 'Dongjangdae, where troops once trained.', 'st.hwahong': 'The north water gate over Suwoncheon.', 'st.mural': 'Lanes painted with murals.', 'st.church': 'Pass the church by the stream and head back.', 'st.sinpung': 'Mural lanes behind the palace.', 'st.village': 'Lanes of cafés and workshops.', 'st.miro': 'A pavilion on the hill behind the palace.', 'st.plazaEnd': 'Back at the square, a short ride to the shop.', 'story.hint': 'Pick a course and scroll. The trike rides the route.', 'fr.click': '→ Tap', 'ui.close': 'Close', 'ui.spause': 'Pause slides', 'ui.splay': 'Play slides',
+    'ui.pause': 'Pause video', 'ui.play': 'Play video', 'at.t1': 'Pick your ride', 'at.t2': 'on the palace map', 'at.until': 'until 30 November', 'bar.addr': '814 Jeongjo-ro, next to Haenggung Care Home', 'bar.ageK': 'Riders', 'bar.age': '13 and up, closed in rain', 'bar.go': 'Directions', 'bt.flip': 'Tap for the 2-hour price', 'bt.back': 'Tap again for 1 hour', 'bt.courses': 'Three routes', 'bt.tapMap': 'Tap to open the map', 'bt.video': 'Tap to watch a ride', 'bt.trike': 'Four-wheel e-trikes, right outside the shop', 'bt.daily': 'Every day', 'bt.naver': 'Tap to open Naver Map', 'bt.walkin': 'No booking needed', 'fr.click': '→ Tap', 'ui.close': 'Close', 'ui.spause': 'Pause slides', 'ui.splay': 'Play slides',
     'branch': 'Hwaseong Haenggung',
     'nav.who': 'Who', 'nav.course': 'Courses', 'nav.price': 'Prices', 'nav.visit': 'Find us',
     'cta.find': 'Find a course', 'cta.findCourse': 'Find your course', 'cta.from': 'Opening deal, 1 hour', 'won': ' KRW',
@@ -52,7 +52,7 @@
   };
   const ZH = {
     'v.call': '拨打电话', 
-    'ui.pause': '暂停视频', 'ui.play': '播放视频', 'at.t1': '看着地图', 'at.t2': '选一条行宫骑行路线', 'at.until': '截至11月30日', 'bar.addr': '正祖路814号，行宫疗养院旁', 'bar.ageK': '年龄', 'bar.age': '13岁以上，雨天休息', 'bar.go': '导航', 'st.shop': '在店门口领取头盔后出发。', 'st.museum': '经过广场旁的市立美术馆。', 'st.jangan': '水原华城的北门正门。', 'st.hwaseo': '沿着城墙骑到西门。', 'st.plaza': '回到行宫前的宽阔广场。', 'st.hmuseum': '了解华城历史的博物馆。', 'st.eocha': '经过华城御车乘车处。', 'st.yeonmu': '昔日练兵的东将台。', 'st.hwahong': '横跨水原川的北水门。', 'st.mural': '满是壁画的小巷。', 'st.church': '经过溪边的圣堂后返回。', 'st.sinpung': '行宫后面的壁画小巷。', 'st.village': '聚集咖啡馆和工坊的小巷。', 'st.miro': '行宫后山丘上的亭子。', 'st.plazaEnd': '回到广场，离店很近。', 'story.hint': '选择路线后向下滚动，自行车会沿路线前进。', 'fr.click': '→ 点击', 'ui.close': '关闭', 'ui.spause': '暂停轮播', 'ui.splay': '播放轮播',
+    'ui.pause': '暂停视频', 'ui.play': '播放视频', 'at.t1': '看着地图', 'at.t2': '选一条行宫骑行路线', 'at.until': '截至11月30日', 'bar.addr': '正祖路814号，行宫疗养院旁', 'bar.ageK': '年龄', 'bar.age': '13岁以上，雨天休息', 'bar.go': '导航', 'bt.flip': '点击查看2小时价格', 'bt.back': '再次点击查看1小时', 'bt.courses': '三条推荐路线', 'bt.tapMap': '点击展开地图', 'bt.video': '点击观看骑行视频', 'bt.trike': '四轮电动自行车，店门口直接出发', 'bt.daily': '每天', 'bt.naver': '点击打开 Naver 地图', 'bt.walkin': '无需预约', 'fr.click': '→ 点击', 'ui.close': '关闭', 'ui.spause': '暂停轮播', 'ui.splay': '播放轮播',
     'branch': '华城行宫店',
     'nav.who': '和谁同行', 'nav.course': '路线', 'nav.price': '价格', 'nav.visit': '交通',
     'cta.find': '找路线', 'cta.findCourse': '找到适合你的路线', 'cta.from': '开业特惠 1小时', 'won': ' 韩元',
@@ -96,7 +96,7 @@
   };
   const JA = {
     'v.call': '電話する', 
-    'ui.pause': '動画を停止', 'ui.play': '動画を再生', 'at.t1': '地図で選ぶ', 'at.t2': '行宮のサイクリングコース', 'at.until': '11月30日まで', 'bar.addr': '正祖路814、行宮療養院の隣', 'bar.ageK': '年齢', 'bar.age': '13歳以上、雨天休業', 'bar.go': '道案内', 'st.shop': 'お店の前でヘルメットを受け取って出発。', 'st.museum': '広場のそばの市立美術館を通ります。', 'st.jangan': '水原華城の北の正門です。', 'st.hwaseo': '城壁に沿って西門まで走ります。', 'st.plaza': '行宮前の広い広場に戻ります。', 'st.hmuseum': '華城の歴史がわかる博物館です。', 'st.eocha': '華城御車の乗り場を通ります。', 'st.yeonmu': 'かつて兵を訓練した東将台です。', 'st.hwahong': '水原川に架かる北の水門です。', 'st.mural': '壁画が続く路地です。', 'st.church': '川沿いの聖堂を通ってお店へ戻ります。', 'st.sinpung': '行宮の裏手の壁画路地です。', 'st.village': 'カフェや工房が集まる路地です。', 'st.miro': '行宮の裏の丘にあるあずまやです。', 'st.plazaEnd': '広場に戻れば、お店はすぐそこ。', 'story.hint': 'コースを選んでスクロールすると、自転車がルートを走ります。', 'fr.click': '→ クリック', 'ui.close': '閉じる', 'ui.spause': 'スライドを停止', 'ui.splay': 'スライドを再生',
+    'ui.pause': '動画を停止', 'ui.play': '動画を再生', 'at.t1': '地図で選ぶ', 'at.t2': '行宮のサイクリングコース', 'at.until': '11月30日まで', 'bar.addr': '正祖路814、行宮療養院の隣', 'bar.ageK': '年齢', 'bar.age': '13歳以上、雨天休業', 'bar.go': '道案内', 'bt.flip': 'タップで2時間の料金', 'bt.back': 'もう一度タップで1時間', 'bt.courses': 'おすすめコース3つ', 'bt.tapMap': 'タップで地図を開く', 'bt.video': 'タップで走行動画を見る', 'bt.trike': '四輪電動自転車、お店の前からすぐ', 'bt.daily': '毎日', 'bt.naver': 'タップで NAVER 地図を開く', 'bt.walkin': '予約なしでOK', 'fr.click': '→ クリック', 'ui.close': '閉じる', 'ui.spause': 'スライドを停止', 'ui.splay': 'スライドを再生',
     'branch': '華城行宮店',
     'nav.who': '誰と', 'nav.course': 'コース', 'nav.price': '料金', 'nav.visit': 'アクセス',
     'cta.find': 'コースを探す', 'cta.findCourse': 'あなたに合うコースを探す', 'cta.from': 'オープン特価 1時間', 'won': ' ウォン',
@@ -141,6 +141,7 @@
   const KO = { 'toast.copied': '복사했어요', 'ui.play': '영상 재생', 'ui.splay': '슬라이드 재생' };
   $$('[data-i18n]').forEach(el => { KO[el.dataset.i18n] ??= el.textContent; });
   $$('[data-i18n-html]').forEach(el => { KO[el.dataset.i18nHtml] ??= el.innerHTML; });
+  $$('[data-i18n-aria]').forEach(el => { KO[el.dataset.i18nAria] ??= el.getAttribute('aria-label'); });
   const DICTS = { ko: KO, en: EN, zh: ZH, ja: JA };
   const t = k => (DICTS[root.lang] || KO)[k] ?? KO[k] ?? k;
 
@@ -149,6 +150,7 @@
     const d = DICTS[lang] || KO;
     $$('[data-i18n]').forEach(el => { const k = el.dataset.i18n; if (k in d) el.textContent = d[k]; });
     $$('[data-i18n-html]').forEach(el => { const k = el.dataset.i18nHtml; if (k in d) el.innerHTML = d[k]; });
+    $$('[data-i18n-aria]').forEach(el => { const k = el.dataset.i18nAria; if (k in d) el.setAttribute('aria-label', d[k]); });
     try { localStorage.setItem('mobelix-lang', lang); } catch (e) {}
   }
   $$('.lang [data-l]').forEach(b => b.addEventListener('click', () => setLang(b.dataset.l)));
@@ -160,11 +162,11 @@
   }
 
   /* ---------- hero video: the same plaza clip on every screen ---------- */
-  const vid = $('.hero video');
+  const vid = $('.tile--hero video');
   if (vid && !reduce) vid.src = vid.dataset.wide;
 
   /* ---------- nav: the banner retracts on the way down, returns on the way up ---------- */
-  const nav = $('.nav'), hero = $('.story');
+  const nav = $('.nav'), hero = $('.bento');
   let lastY = scrollY;
   const onScroll = () => {
     const y = scrollY;
@@ -217,65 +219,59 @@
     new IntersectionObserver(([e]) => { s.seen = e.isIntersecting; sync(); }, { threshold: .25 }).observe(el);
   });
 
-  /* ---------- course story: scrolling moves the trike along the route and the map follows ---------- */
-  const stage = $('.story__stage'), layer = $('.story__layer'), trike = $('.story__trike');
-  const wide = matchMedia('(min-width: 60.01rem)');
-  let course = 'a', active = 0, io = null;
-  const steps = () => $$(`.steps[data-course="${course}"] .step`);
-  function place() {
-    const W = stage.clientWidth, H = stage.clientHeight;
-    let Lw = W, Lh = W * 0.75;
-    if (Lh < H) { Lh = H; Lw = H / 0.75; }
-    layer.style.width = Lw + 'px'; layer.style.height = Lh + 'px';
-    const st = steps()[active], x = parseFloat(st.dataset.x) / 100 * Lw, y = parseFloat(st.dataset.y) / 100 * Lh;
-    const s = reduce ? 1 : (wide.matches ? 1.6 : 2.1);
-    const clamp = (v, lo) => Math.min(0, Math.max(lo, v));
-    const tx = clamp(W / 2 - s * x, W - s * Lw), ty = clamp(H / 2 - s * y, H - s * Lh);
-    layer.style.transform = `translate(${tx}px, ${ty}px) scale(${s})`;
-    layer.style.setProperty('--inv', 1 / s);
-    trike.style.transform = `translate(${x}px, ${y}px) translate(-50%, -88%) scale(${1 / s})`;
-  }
-  function setStep(i) {
-    active = i;
-    steps().forEach((li, k) => li.classList.toggle('is-on', k === i));
-    place();
-  }
-  function watch() {
-    io?.disconnect();
-    io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) setStep(steps().indexOf(e.target)); }), { rootMargin: wide.matches ? '-48% 0px -48% 0px' : '-70% 0px -26% 0px' });
-    steps().forEach(li => io.observe(li));
-  }
+  /* ---------- bento tiles: each one answers a tap ---------- */
+  const morph = fn => (!reduce && document.startViewTransition) ? document.startViewTransition(fn) : fn();
+  // price: flips between one and two hours
+  $$('[data-flip]').forEach(b => b.addEventListener('click', () => {
+    const on = b.getAttribute('aria-pressed') !== 'true';
+    b.setAttribute('aria-pressed', on);
+    $('.flip__front', b).setAttribute('aria-hidden', on);
+    $('.flip__back', b).setAttribute('aria-hidden', !on);
+  }));
+  // course: the map tile opens across the grid with the stops of each route
+  const ctile = $('[data-course-tile]');
   function pickCourse(c) {
-    course = c;
-    $$('.ctab').forEach(b => { const on = b.dataset.course === c; b.classList.toggle('is-on', on); b.setAttribute('aria-selected', on); });
-    $$('.story__layer > img').forEach(m => m.classList.toggle('is-on', m.dataset.course === c));
-    $$('.steps').forEach(o => { o.hidden = o.dataset.course !== c; });
-    $$('.story__dot').forEach(d => d.remove());
-    steps().forEach((li, k) => {
-      if (k && li.dataset.x === steps()[0].dataset.x && li.dataset.y === steps()[0].dataset.y) return;
-      const d = document.createElement('button');
-      d.type = 'button'; d.className = 'story__dot'; d.textContent = k + 1;
-      d.setAttribute('aria-label', li.querySelector('h2').textContent);
-      d.style.left = li.dataset.x + '%'; d.style.top = li.dataset.y + '%';
-      d.addEventListener('click', () => li.scrollIntoView({ block: 'center', behavior: reduce ? 'auto' : 'smooth' }));
-      layer.append(d);
+    $$('.ctab').forEach(b => { const on = b.dataset.course === c; b.classList.toggle('is-on', on); b.setAttribute('aria-pressed', on); });
+    $$('.tile--course__map img').forEach(m => m.classList.toggle('is-on', m.dataset.course === c));
+    $$('.bstops').forEach(o => { o.hidden = o.dataset.course !== c; });
+  }
+  function openCourse(c, go) {
+    if (!ctile) return;
+    if (c) pickCourse(c);
+    if (!ctile.classList.contains('is-open')) morph(() => {
+      ctile.classList.add('is-open');
+      $('.tile--course__panel', ctile).hidden = false;
+      $('[data-course-open]', ctile).setAttribute('aria-expanded', 'true');
     });
-    setStep(0); watch();
+    if (go) setTimeout(() => ctile.scrollIntoView({ block: 'start', behavior: reduce ? 'auto' : 'smooth' }), reduce ? 0 : 320);
+    setTimeout(() => $('.ctab.is-on', ctile)?.focus({ preventScroll: true }), reduce ? 0 : 340);
   }
-  if (stage) {
-    root.classList.add('has-story');
-    if (reduce) root.classList.add('is-calm');
-    $$('.ctab').forEach(b => b.setAttribute('title', b.textContent.trim()));
-    $$('.ctab').forEach(b => b.addEventListener('click', () => {
-      pickCourse(b.dataset.course);
-      const r = steps()[0].querySelector('h2').getBoundingClientRect();
-      const top = r.top + scrollY + r.height / 2 - innerHeight * (wide.matches ? 0.5 : 0.72);
-      if (Math.abs(scrollY - top) > 40) scrollTo({ top, behavior: reduce ? 'auto' : 'smooth' });
-    }));
-    $$('.persona').forEach(a => a.addEventListener('click', () => pickCourse(a.dataset.course)));
-    addEventListener('resize', place); wide.addEventListener('change', () => { place(); watch(); });
-    pickCourse('a');
+  function closeCourse() {
+    morph(() => {
+      ctile.classList.remove('is-open');
+      $('.tile--course__panel', ctile).hidden = true;
+      $('[data-course-open]', ctile).setAttribute('aria-expanded', 'false');
+    });
+    $('[data-course-open]', ctile).focus({ preventScroll: true });
   }
+  if (ctile) {
+    $('[data-course-open]', ctile).addEventListener('click', () => openCourse(null, true));
+    $('[data-course-close]', ctile).addEventListener('click', closeCourse);
+    $$('.ctab', ctile).forEach(b => b.addEventListener('click', () => pickCourse(b.dataset.course)));
+    $$('[data-open-course]').forEach(a => a.addEventListener('click', e => { e.preventDefault(); openCourse(null, true); }));
+    $$('.persona').forEach(a => a.addEventListener('click', e => { e.preventDefault(); openCourse(a.dataset.course, true); }));
+    if (location.hash === '#courses') openCourse(null, false);
+  }
+  // photo: a tap plays the ride footage, a second tap stops it
+  $$('[data-tile-video]').forEach(b => {
+    const v = $('video', b), lbl = $('.tile__lbl', b);
+    b.addEventListener('click', () => {
+      const on = b.getAttribute('aria-pressed') !== 'true';
+      b.setAttribute('aria-pressed', on);
+      if (on) { v.play().catch(() => {}); lbl.textContent = t('ui.pause'); lbl.dataset.i18n = 'ui.pause'; }
+      else { v.pause(); lbl.textContent = t('bt.video'); lbl.dataset.i18n = 'bt.video'; }
+    });
+  });
 
   /* ---------- copy ---------- */
   const toast = $('.toast');

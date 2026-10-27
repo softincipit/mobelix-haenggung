@@ -66,65 +66,57 @@
 <main id="main">
 <span id="top"></span>
 
-<section class="story" id="courses" aria-labelledby="story-title">
-  <div class="container story__grid">
-    <header class="story__intro">
-      <h1 class="story__title" id="story-title"><span class="ln" data-i18n="at.t1">지도 보고 고르는</span> <span class="ln" data-i18n="at.t2">행궁 자전거 길</span></h1>
-      <p class="story__lede" data-i18n="hero.kicker">수원 화성행궁 앞 네발전기자전거 대여.</p>
-      <p class="story__hint" data-i18n="story.hint">코스를 고르고 스크롤해 보세요. 자전거가 길을 따라 달려요.</p>
-    </header>
-    <div class="story__stage">
-      <div class="ctabs" role="tablist" aria-label="코스 선택"><button class="ctab is-on" type="button" role="tab" aria-selected="true" data-course="a"><b>A</b> <span data-i18n="cs.aName">성곽 북문 코스</span></button><button class="ctab" type="button" role="tab" aria-selected="false" data-course="b"><b>B</b> <span data-i18n="cs.bName">수원천과 화홍문 코스</span></button><button class="ctab" type="button" role="tab" aria-selected="false" data-course="c"><b>C</b> <span data-i18n="cs.cName">행궁 한 바퀴 코스</span></button></div>
-      <div class="story__layer">
-        <img class="is-on" data-course="a" src="assets/maps/course-a.webp" alt="코스 A 지도" width="2000" height="1500">
-        <img data-course="b" src="assets/maps/course-b.webp" alt="코스 B 지도" width="2000" height="1500" loading="lazy">
-        <img data-course="c" src="assets/maps/course-c.webp" alt="코스 C 지도" width="2000" height="1500" loading="lazy">
-        <span class="story__trike" aria-hidden="true"><img src="assets/img/trike-white-4.webp" alt="" width="1400" height="1120"></span>
+<section class="bento" id="courses" aria-labelledby="bento-title">
+  <div class="container bento__grid">
+    <div class="tile tile--hero" data-loop>
+      <video muted playsinline loop autoplay preload="auto" poster="assets/video/plaza-wide-poster.jpg" data-wide="assets/video/plaza-wide.mp4" aria-hidden="true"></video>
+      <button class="loop-toggle" type="button" data-loop-toggle data-i18n="ui.pause">영상 멈춤</button>
+      <div class="tile__body">
+        <h1 class="tile--hero__title" id="bento-title"><span class="ln" data-i18n="hero.t1">네 바퀴로</span> <span class="ln" data-i18n="hero.t2">행궁을 달리다</span></h1>
+        <p class="tile--hero__lede" data-i18n="hero.kicker">수원 화성행궁 앞 네발전기자전거 대여.</p>
+        <a class="btn btn--primary" href="#courses" data-open-course data-i18n="cta.findCourse">나에게 맞는 코스 찾기</a>
       </div>
-      <a class="atlas__chip" href="#price"><s>20,000<span data-i18n="won">원</span></s><b><span data-i18n="cta.from">오픈 특가 1시간</span> 15,000<span data-i18n="won">원</span></b><small data-i18n="at.until">11월 30일까지</small></a>
     </div>
-    <div class="story__steps">
-        <ol class="steps" data-course="a">
-          <li class="step is-on" data-x="45.8" data-y="61.0"><span class="step__n">1</span><h2 data-i18n="s.shop">MOBELIX 화성행궁점</h2><p data-i18n="st.shop">헬멧을 받고 매장 앞에서 출발해요.</p></li>
-          <li class="step" data-x="50.1" data-y="50.3"><span class="step__n">2</span><h2 data-i18n="s.museum">수원시립미술관</h2><p data-i18n="st.museum">행궁광장 옆 시립미술관을 지나요.</p></li>
-          <li class="step" data-x="65.4" data-y="31.5"><span class="step__n">3</span><h2 data-i18n="s.jangan">장안문</h2><p data-i18n="st.jangan">수원화성의 북쪽 정문이에요.</p></li>
-          <li class="step" data-x="45.9" data-y="26.5"><span class="step__n">4</span><h2 data-i18n="s.hwaseo">화서문</h2><p data-i18n="st.hwaseo">성곽을 따라 서쪽 문까지 달려요.</p></li>
-          <li class="step" data-x="47.0" data-y="54.9"><span class="step__n">5</span><h2 data-i18n="s.plaza">행궁광장</h2><p data-i18n="st.plaza">행궁 앞 넓은 광장으로 돌아와요.</p></li>
-        </ol>
-        <ol class="steps" data-course="b" hidden>
-          <li class="step is-on" data-x="45.8" data-y="60.7"><span class="step__n">1</span><h2 data-i18n="s.shop">MOBELIX 화성행궁점</h2><p data-i18n="st.shop">헬멧을 받고 매장 앞에서 출발해요.</p></li>
-          <li class="step" data-x="59.8" data-y="61.9"><span class="step__n">2</span><h2 data-i18n="s.hmuseum">수원화성박물관</h2><p data-i18n="st.hmuseum">화성의 역사를 볼 수 있는 박물관이에요.</p></li>
-          <li class="step" data-x="84.1" data-y="56.4"><span class="step__n">3</span><h2 data-i18n="s.eocha">화성어차 승차장</h2><p data-i18n="st.eocha">화성어차를 타는 곳을 지나요.</p></li>
-          <li class="step" data-x="86.3" data-y="49.5"><span class="step__n">4</span><h2 data-i18n="s.yeonmu">연무대</h2><p data-i18n="st.yeonmu">군사를 훈련하던 동장대예요.</p></li>
-          <li class="step" data-x="70.1" data-y="42.5"><span class="step__n">5</span><h2 data-i18n="s.hwahong">화홍문</h2><p data-i18n="st.hwahong">수원천 위에 놓인 북쪽 수문이에요.</p></li>
-          <li class="step" data-x="59.0" data-y="49.5"><span class="step__n">6</span><h2 data-i18n="s.mural">행궁동 벽화마을</h2><p data-i18n="st.mural">골목마다 벽화가 이어져요.</p></li>
-          <li class="step" data-x="56.8" data-y="54.1"><span class="step__n">7</span><h2 data-i18n="s.church">북수동 성당</h2><p data-i18n="st.church">수원천 옆 성당을 지나 매장으로 돌아와요.</p></li>
-        </ol>
-        <ol class="steps" data-course="c" hidden>
-          <li class="step is-on" data-x="47.0" data-y="54.9"><span class="step__n">1</span><h2 data-i18n="s.plaza">행궁광장</h2><p data-i18n="st.plaza">행궁 앞 광장에서 출발해요.</p></li>
-          <li class="step" data-x="50.1" data-y="50.3"><span class="step__n">2</span><h2 data-i18n="s.museum">수원시립미술관</h2><p data-i18n="st.museum">광장 옆 시립미술관을 지나요.</p></li>
-          <li class="step" data-x="52.6" data-y="42.8"><span class="step__n">3</span><h2 data-i18n="s.sinpung">신풍동 벽화마을</h2><p data-i18n="st.sinpung">행궁 뒤편 벽화 골목이에요.</p></li>
-          <li class="step" data-x="51.2" data-y="35.8"><span class="step__n">4</span><h2 data-i18n="s.village">행궁마을길</h2><p data-i18n="st.village">카페와 공방이 모인 골목이에요.</p></li>
-          <li class="step" data-x="45.9" data-y="26.5"><span class="step__n">5</span><h2 data-i18n="s.hwaseo">화서문</h2><p data-i18n="st.hwaseo">수원화성의 서쪽 문이에요.</p></li>
-          <li class="step" data-x="31.7" data-y="43.2"><span class="step__n">6</span><h2 data-i18n="s.miro">미로한정</h2><p data-i18n="st.miro">행궁 뒤 언덕 위 정자예요.</p></li>
-          <li class="step" data-x="47.0" data-y="54.9"><span class="step__n">7</span><h2 data-i18n="s.plaza">행궁광장</h2><p data-i18n="st.plazaEnd">다시 광장으로, 매장까지 금방이에요.</p></li>
-        </ol>
-    </div>
-  </div>
-</section>
 
-<section class="hero">
-  <div class="hero__field" data-loop>
-    <video muted playsinline loop autoplay preload="auto" poster="assets/video/plaza-wide-poster.jpg" data-wide="assets/video/plaza-wide.mp4" aria-hidden="true"></video>
-    <button class="loop-toggle" type="button" data-loop-toggle data-i18n="ui.pause">영상 멈춤</button>
-  </div>
-  <div class="container hero__foot">
-    <h2 class="hero__title"><span class="ln" data-i18n="hero.t1">네 바퀴로</span> <span class="ln" data-i18n="hero.t2">행궁을 달리다</span></h2>
-    <p class="hero__lede" data-i18n="hero.kicker">수원 화성행궁 앞 네발전기자전거 대여.</p>
-    <div class="hero__cta">
-      <a class="btn btn--primary" href="#courses" data-i18n="cta.findCourse">나에게 맞는 코스 찾기</a>
-      <a class="btn btn--quiet" href="#price"><span data-i18n="cta.from">오픈 특가 1시간</span>&nbsp;<b>15,000</b><span data-i18n="won">원</span></a>
+    <button class="tile tile--price" type="button" aria-pressed="false" data-flip>
+      <span class="flip__face flip__front"><span class="tile__lbl" data-i18n="cta.from">오픈 특가 1시간</span><b class="tile__big prow__p" data-promo="15,000" data-normal="20,000">15,000</b><span class="tile__sub"><span class="promo-only"><s>20,000<span data-i18n="won">원</span></s> <span data-i18n="at.until">11월 30일까지</span></span></span><span class="tile__hint" data-i18n="bt.flip">눌러서 2시간 요금 보기</span></span>
+      <span class="flip__face flip__back" aria-hidden="true"><span class="tile__lbl" data-i18n="pr.h2">2시간</span><b class="tile__big prow__p" data-promo="25,000" data-normal="35,000">25,000</b><span class="tile__sub"><span class="promo-only"><s>35,000<span data-i18n="won">원</span></s> <span data-i18n="at.until">11월 30일까지</span></span></span><span class="tile__hint" data-i18n="bt.back">다시 누르면 1시간 요금</span></span>
+    </button>
+
+    <div class="tile tile--course" data-course-tile>
+      <button class="tile--course__open" type="button" aria-expanded="false" data-course-open>
+        <span class="tile__lbl" data-i18n="bt.courses">추천 코스 3개</span>
+        <span class="tile--course__thumb"><img class="is-on" data-course="a" src="assets/maps/course-a.webp" alt="코스 A 지도" width="2000" height="1500"><img data-course="b" src="assets/maps/course-b.webp" alt="코스 B 지도" width="2000" height="1500" loading="lazy"><img data-course="c" src="assets/maps/course-c.webp" alt="코스 C 지도" width="2000" height="1500" loading="lazy"></span>
+        <span class="tile__hint" data-i18n="bt.tapMap">눌러서 지도 펼치기</span>
+      </button>
+      <div class="tile--course__panel" hidden>
+        <div class="tile--course__head">
+          <div class="ctabs" role="group" aria-label="코스 선택"><button class="ctab is-on" type="button" aria-pressed="true" data-course="a"><b>A</b> <span data-i18n="cs.aName">성곽 북문 코스</span></button><button class="ctab" type="button" aria-pressed="false" data-course="b"><b>B</b> <span data-i18n="cs.bName">수원천과 화홍문 코스</span></button><button class="ctab" type="button" aria-pressed="false" data-course="c"><b>C</b> <span data-i18n="cs.cName">행궁 한 바퀴 코스</span></button></div>
+          <button class="tile__x" type="button" data-course-close aria-label="닫기" data-i18n-aria="ui.close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+        </div>
+        <div class="tile--course__body">
+          <div class="tile--course__map"><img class="is-on" data-course="a" src="assets/maps/course-a.webp" alt="코스 A 지도" width="2000" height="1500"><img data-course="b" src="assets/maps/course-b.webp" alt="코스 B 지도" width="2000" height="1500" loading="lazy"><img data-course="c" src="assets/maps/course-c.webp" alt="코스 C 지도" width="2000" height="1500" loading="lazy"></div>
+          <div class="tile--course__stops">
+          <ol class="bstops" data-course="a"><li data-i18n="s.shop">MOBELIX 화성행궁점</li><li data-i18n="s.museum">수원시립미술관</li><li data-i18n="s.jangan">장안문</li><li data-i18n="s.hwaseo">화서문</li><li data-i18n="s.plaza">행궁광장</li></ol>
+          <ol class="bstops" data-course="b" hidden><li data-i18n="s.shop">MOBELIX 화성행궁점</li><li data-i18n="s.hmuseum">수원화성박물관</li><li data-i18n="s.eocha">화성어차 승차장</li><li data-i18n="s.yeonmu">연무대</li><li data-i18n="s.hwahong">화홍문</li><li data-i18n="s.mural">행궁동 벽화마을</li><li data-i18n="s.church">북수동 성당</li></ol>
+          <ol class="bstops" data-course="c" hidden><li data-i18n="s.plaza">행궁광장</li><li data-i18n="s.museum">수원시립미술관</li><li data-i18n="s.sinpung">신풍동 벽화마을</li><li data-i18n="s.village">행궁마을길</li><li data-i18n="s.hwaseo">화서문</li><li data-i18n="s.miro">미로한정</li><li data-i18n="s.plaza">행궁광장</li></ol>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <button class="tile tile--video" type="button" aria-pressed="false" data-tile-video>
+      <video src="assets/video/rider-sunset.mp4" poster="assets/img/ride-with-dog.webp" muted loop playsinline preload="none" aria-hidden="true"></video>
+      <span class="tile__lbl tile__lbl--on" data-i18n="bt.video">눌러서 주행 영상 보기</span>
+    </button>
+
+    <div class="tile tile--trike"><img src="assets/img/trike-white-1.webp" alt="네 바퀴 전기자전거" width="1400" height="1120" loading="lazy"><span class="tile__lbl" data-i18n="bt.trike">네 바퀴 전기자전거, 매장 앞에서 바로</span></div>
+
+    <div class="tile tile--hours"><span class="tile__lbl" data-i18n="bt.daily">매일</span><b class="tile__mid">10:00<br>~19:00</b><span class="tile__sub" data-i18n="v.winter">동절기(11월~) 10:00~17:00, 우천 시 휴무</span></div>
+
+    <a class="tile tile--loc" href="https://map.naver.com/p/search/%EC%88%98%EC%9B%90%EC%8B%9C%20%ED%8C%94%EB%8B%AC%EA%B5%AC%20%EC%A0%95%EC%A1%B0%EB%A1%9C%20814" target="_blank" rel="noopener"><span class="tile__lbl" data-i18n="bar.addr">정조로 814, 행궁요양원 옆</span><b class="tile__mid" data-i18n="bar.go">길찾기</b><span class="tile__hint" data-i18n="bt.naver">눌러서 네이버 지도 열기</span></a>
+
+    <a class="tile tile--call" href="tel:0312520582"><span class="tile__lbl" data-i18n="bt.walkin">예약 없이 바로</span><b class="tile__mid">031-252-0582</b><span class="tile__hint" data-i18n="v.call">전화</span></a>
   </div>
 </section>
 
