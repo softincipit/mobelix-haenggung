@@ -8,7 +8,7 @@
   /* ---------- language: Korean lives in the HTML, English here ---------- */
   const EN = {
     'v.call': 'Call', 
-    'ui.pause': 'Pause video', 'ui.play': 'Play video', 'fr.click': '→ Tap', 'ui.close': 'Close', 'ui.spause': 'Pause slides', 'ui.splay': 'Play slides',
+    'ui.pause': 'Pause video', 'ui.play': 'Play video', 'at.t1': 'Pick your ride', 'at.t2': 'on the palace map', 'at.until': 'until 30 November', 'bar.addr': '814 Jeongjo-ro, next to Haenggung Care Home', 'bar.ageK': 'Riders', 'bar.age': '13 and up, closed in rain', 'bar.go': 'Directions', 'fr.click': '→ Tap', 'ui.close': 'Close', 'ui.spause': 'Pause slides', 'ui.splay': 'Play slides',
     'branch': 'Hwaseong Haenggung',
     'nav.who': 'Who', 'nav.course': 'Courses', 'nav.price': 'Prices', 'nav.visit': 'Find us',
     'cta.find': 'Find a course', 'cta.findCourse': 'Find your course', 'cta.from': 'Opening deal, 1 hour', 'won': ' KRW',
@@ -52,7 +52,7 @@
   };
   const ZH = {
     'v.call': '拨打电话', 
-    'ui.pause': '暂停视频', 'ui.play': '播放视频', 'fr.click': '→ 点击', 'ui.close': '关闭', 'ui.spause': '暂停轮播', 'ui.splay': '播放轮播',
+    'ui.pause': '暂停视频', 'ui.play': '播放视频', 'at.t1': '看着地图', 'at.t2': '选一条行宫骑行路线', 'at.until': '截至11月30日', 'bar.addr': '正祖路814号，行宫疗养院旁', 'bar.ageK': '年龄', 'bar.age': '13岁以上，雨天休息', 'bar.go': '导航', 'fr.click': '→ 点击', 'ui.close': '关闭', 'ui.spause': '暂停轮播', 'ui.splay': '播放轮播',
     'branch': '华城行宫店',
     'nav.who': '和谁同行', 'nav.course': '路线', 'nav.price': '价格', 'nav.visit': '交通',
     'cta.find': '找路线', 'cta.findCourse': '找到适合你的路线', 'cta.from': '开业特惠 1小时', 'won': ' 韩元',
@@ -96,7 +96,7 @@
   };
   const JA = {
     'v.call': '電話する', 
-    'ui.pause': '動画を停止', 'ui.play': '動画を再生', 'fr.click': '→ クリック', 'ui.close': '閉じる', 'ui.spause': 'スライドを停止', 'ui.splay': 'スライドを再生',
+    'ui.pause': '動画を停止', 'ui.play': '動画を再生', 'at.t1': '地図で選ぶ', 'at.t2': '行宮のサイクリングコース', 'at.until': '11月30日まで', 'bar.addr': '正祖路814、行宮療養院の隣', 'bar.ageK': '年齢', 'bar.age': '13歳以上、雨天休業', 'bar.go': '道案内', 'fr.click': '→ クリック', 'ui.close': '閉じる', 'ui.spause': 'スライドを停止', 'ui.splay': 'スライドを再生',
     'branch': '華城行宮店',
     'nav.who': '誰と', 'nav.course': 'コース', 'nav.price': '料金', 'nav.visit': 'アクセス',
     'cta.find': 'コースを探す', 'cta.findCourse': 'あなたに合うコースを探す', 'cta.from': 'オープン特価 1時間', 'won': ' ウォン',
@@ -164,7 +164,7 @@
   if (vid && !reduce) vid.src = vid.dataset.wide;
 
   /* ---------- nav: the banner retracts on the way down, returns on the way up ---------- */
-  const nav = $('.nav'), hero = $('.hero');
+  const nav = $('.nav'), hero = $('.atlas');
   let lastY = scrollY;
   const onScroll = () => {
     const y = scrollY;

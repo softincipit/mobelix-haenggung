@@ -10,6 +10,9 @@
 /* Hallmark · dismissed 59 · ten blocks counting the footer, each one the owner's own content: price, the trike, routes, footage, the group offer, the way here */
 /* Hallmark · dismissed 25 · the band line is one display-size sentence, not running prose */
 /* Hallmark · dropped trike-fortress-wall.webp, hero-sinpungnu.webp, trike-hanok-gate.webp, trike-haenggung-gate.webp · the hero no longer rotates stills and each route shows its map */
+/* Hallmark · dropped "three routes from our door" · the owner chose a map-first opening; its h1 now names the routes and the course switcher moved into it */
+/* Hallmark · answered F20 · the stops run as one wrapped line of place names; each course has a different count (5, 6, 7), so no column count fits all three */
+/* Hallmark · dismissed 69 · hours repeat on purpose: the fixed info bar, the visit rows and the price rules each answer a different question */
 /* Hallmark · dropped the scroll-driven trike motion and the pinned showcase · the owner asked for a still picture and tighter steps */
 /* Hallmark · dropped trike-cutout.webp · the owner replaced it with six white trike photos that slide in from the left, with a pause button and a hold on hover or focus */
 /* Hallmark · the statement sits over the owner's line drawing of the Jeongjo Theme Theater gate with the trike, faded to a green ink wash at the owner's request; the owner's own artwork */
@@ -191,10 +194,40 @@ html:not(.js) .show__stage .slide:not(:first-of-type) { display: none; }
 .persona:hover .more { text-decoration-color: var(--color-accent); }
 
 /* three routes from the door: a switcher over the owner's maps */
-.courses { padding-block: var(--section-gap); border-top: 1px solid var(--color-rule); }
-.courses__head { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); column-gap: var(--space-3xl); align-items: end; }
-.courses__head .lead { padding-bottom: var(--space-xs); }
-.courses__grid { margin-top: var(--space-2xl); display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); column-gap: var(--space-3xl); align-items: start; }
+/* ---------- atlas: the course map is the first screen ---------- */
+.atlas { padding-block: var(--space-xl) var(--section-gap-s); }
+.atlas__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); grid-template-rows: auto 1fr; column-gap: var(--space-2xl); row-gap: var(--space-lg); align-items: start; }
+.atlas__head { grid-column: 1; grid-row: 1; min-width: 0; }
+.atlas__title { font-size: var(--text-display-s); line-height: 1.08; letter-spacing: -0.015em; overflow-wrap: break-word; min-width: 0; }
+.atlas__title .ln { display: block; }
+.atlas__lede { margin-top: var(--space-md); font-size: var(--text-lead); color: var(--color-ink-2); }
+.atlas__hint { margin-top: var(--space-xs); font-size: var(--text-sm); color: var(--color-muted); }
+.atlas__side { grid-column: 1; grid-row: 2; min-width: 0; }
+.atlas__map { grid-column: 2; grid-row: 1 / span 2; position: sticky; top: calc(var(--bar-h) + var(--space-md)); }
+.atlas__chip { position: absolute; z-index: var(--z-raised); left: var(--space-md); bottom: var(--space-md); display: grid; gap: var(--space-3xs); padding: var(--space-sm) var(--space-md); border-radius: var(--radius-card); background: var(--color-ink); color: var(--on-ink); text-decoration: none; transition: background-color var(--dur-short) var(--ease-out); }
+.atlas__chip:hover { background: var(--color-ink-2); }
+.atlas__chip:active { transform: translateY(1px); }
+.atlas__chip:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
+.atlas__chip s { font-size: var(--text-sm); color: var(--on-ink-2); }
+.atlas__chip b { font: 600 var(--text-xl)/1.1 var(--font-display); }
+.atlas__chip small { font-size: var(--text-sm); color: var(--on-ink-2); }
+.atlas .stops { margin-top: var(--space-md); display: flex; flex-wrap: wrap; gap: var(--space-xs) var(--space-lg); }
+.atlas .stops li { border-top: 0; padding-block: 0; }
+
+/* ---------- info bar: hours, place and the two actions stay on screen ---------- */
+.infobar { position: fixed; z-index: var(--z-sticky); left: 0; right: 0; bottom: 0; padding-bottom: env(safe-area-inset-bottom, 0px); background: var(--color-ink); color: var(--on-ink); }
+.infobar__row { display: flex; align-items: center; justify-content: space-between; gap: var(--space-lg); min-height: 68px; }
+.infobar__facts { display: flex; gap: var(--space-xl); margin: 0; min-width: 0; }
+.infobar__facts div { display: flex; gap: var(--space-xs); align-items: baseline; }
+.infobar__facts dt { font-size: var(--text-sm); color: var(--on-ink-2); }
+.infobar__facts dd { margin: 0; font-weight: 500; white-space: nowrap; }
+.infobar__acts { display: flex; gap: var(--space-xs); flex: none; }
+.infobar__tel { border-color: var(--on-ink); color: var(--on-ink); gap: var(--space-xs); }
+.infobar__tel:hover { background: var(--scrim); }
+.infobar__tel:focus-visible, .infobar .btn--primary:focus-visible { outline-color: var(--color-accent-2); }
+.infobar__tel svg { width: 18px; height: 18px; fill: currentColor; }
+body { padding-bottom: calc(68px + env(safe-area-inset-bottom, 0px)); }
+
 .cards { display: grid; border-top: 1px solid var(--color-rule-2); }
 .ccard { display: grid; grid-template-columns: 3.25rem minmax(0, 1fr); column-gap: var(--space-md); row-gap: var(--space-3xs); padding: var(--space-md) var(--space-md) var(--space-md) var(--space-xs); border: 0; border-bottom: 1px solid var(--color-rule); background: transparent; color: var(--color-ink-2); text-align: left; cursor: pointer; transition: background-color var(--dur-short) var(--ease-out); }
 .ccard:hover { background: var(--color-paper-2); }
@@ -278,11 +311,6 @@ html:not(.js) .show__stage .slide:not(:first-of-type) { display: none; }
 .foot__text a:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
 
 /* call button on phones, and the copy toast */
-.fab { position: fixed; z-index: var(--z-sticky); right: calc(var(--space-md) + env(safe-area-inset-right, 0px)); bottom: calc(var(--space-md) + env(safe-area-inset-bottom, 0px)); width: 56px; height: 56px; border-radius: 50%; display: none; place-items: center; background: var(--color-accent); color: var(--color-accent-ink); transition: background-color var(--dur-short) var(--ease-out); }
-.fab:hover { background: var(--color-ink-2); }
-.fab:active { transform: translateY(1px); }
-.fab:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 3px; }
-.fab svg { width: 24px; height: 24px; fill: currentColor; }
 .toast { position: fixed; z-index: var(--z-toast); left: 50%; bottom: var(--space-xl); padding: var(--space-sm) var(--space-lg); border-radius: var(--radius-pill); background: var(--color-ink); color: var(--color-paper); font-weight: 500; opacity: 0; transform: translate(-50%, var(--space-md)); transition: opacity var(--dur-short) var(--ease-out), transform var(--dur-short) var(--ease-out); pointer-events: none; }
 .toast.is-on { opacity: 1; transform: translate(-50%, 0); }
 
@@ -293,15 +321,24 @@ html:not(.js) .show__stage .slide:not(:first-of-type) { display: none; }
   .hero { min-height: 560px; }
   .hero__foot { grid-template-columns: minmax(0, 1fr); }
   .hero__facts { margin-top: var(--space-xl); }
-  .price__grid, .show__grid, .passion__head, .courses__head, .courses__grid, .visit__grid, .foot__grid { grid-template-columns: minmax(0, 1fr); row-gap: var(--space-xl); }
+  .price__grid, .show__grid, .passion__head, .visit__grid, .foot__grid { grid-template-columns: minmax(0, 1fr); row-gap: var(--space-xl); }
   .rules { padding: var(--space-lg); }
   .rules dl { grid-auto-rows: auto; }
   .persona { grid-template-columns: 160px minmax(0, 1fr); grid-template-rows: auto auto auto; row-gap: var(--space-2xs); }
   .persona img { grid-row: 1 / 4; width: 160px; height: 120px; align-self: start; }
   .route__map { order: -1; }
-  body:has(.nav.is-solid) .fab { display: grid; }
-}
+  body:has(.nav.is-solid) }
 @media (max-width: 40rem) {
+  .atlas__grid { grid-template-columns: minmax(0, 1fr); grid-template-rows: none; }
+  .atlas__head, .atlas__side, .atlas__map { grid-column: 1; grid-row: auto; }
+  .atlas__map { position: relative; top: auto; order: 0; }
+  .atlas__chip { left: var(--space-xs); bottom: var(--space-xs); padding: var(--space-xs) var(--space-sm); }
+  .atlas__chip b { font-size: var(--text-md); }
+  .atlas__chip s, .atlas__chip small { font-size: var(--text-xs); }
+  .infobar__facts .infobar__addr, .infobar__facts .infobar__age { display: none; }
+  .infobar__facts dt { display: none; }
+  .infobar__row { min-height: 60px; gap: var(--space-sm); }
+  body { padding-bottom: calc(60px + env(safe-area-inset-bottom, 0px)); }
   .freedom__cta { flex-wrap: nowrap; }
   .freedom__hint { font-size: var(--text-md); }
   .freedom__ig { min-height: 48px; padding: 0 var(--space-md); font-size: var(--text-md); }
@@ -355,5 +392,5 @@ html:not(.js) .show__stage .slide:not(:first-of-type) { display: none; }
 
 @media (prefers-reduced-motion: reduce) {
   .nav, .nav.is-tucked { transform: none; }
-  .btn, .lang button, .ccard, .persona, .callbtn, .fab, .toast, .loop-toggle, .route__map img, .js .show__stage .slide { transition: none; }
+  .btn, .lang button, .ccard, .persona, .callbtn, .toast, .loop-toggle, .route__map img, .js .show__stage .slide { transition: none; }
 }

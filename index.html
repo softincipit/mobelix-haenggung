@@ -64,23 +64,69 @@
 </header>
 
 <main id="main">
+<span id="top"></span>
 
-<section class="hero" id="top">
+<section class="atlas" id="courses" aria-labelledby="atlas-title">
+  <div class="container atlas__grid">
+    <div class="atlas__head">
+      <h1 class="atlas__title" id="atlas-title"><span class="ln" data-i18n="at.t1">지도 보고 고르는</span> <span class="ln" data-i18n="at.t2">행궁 자전거 길</span></h1>
+      <p class="atlas__lede" data-i18n="hero.kicker">수원 화성행궁 앞 네발전기자전거 대여.</p>
+      <p class="atlas__hint" data-i18n="cs.lead">카드를 누르면 지도와 경유지가 바뀌어요.</p>
+    </div>
+      <div class="route__map atlas__map" aria-label="코스 지도">
+        <img class="is-on" data-course="a" src="assets/maps/course-a.webp" alt="코스 A 지도" width="2000" height="1500">
+        <img data-course="b" src="assets/maps/course-b.webp" alt="코스 B 지도" width="2000" height="1500">
+        <img data-course="c" src="assets/maps/course-c.webp" alt="코스 C 지도" width="2000" height="1500">
+        <a class="atlas__chip" href="#price"><s>20,000<span data-i18n="won">원</span></s><b><span data-i18n="cta.from">오픈 특가 1시간</span> 15,000<span data-i18n="won">원</span></b><small data-i18n="at.until">11월 30일까지</small></a>
+      </div>
+    <div class="atlas__side">
+        <div class="cards" role="tablist" aria-label="코스 선택">
+          <button class="ccard is-on" type="button" role="tab" aria-selected="true" data-course="a">
+            <span class="ccard__letter" aria-hidden="true">A</span>
+            <b data-i18n="cs.aName">성곽 북문 코스</b>
+            <span class="ccard__tag" data-i18n="cs.aTag">처음 온 여행자 추천</span>
+            <span class="ccard__hook" data-i18n="cs.aHook">장안문과 화서문, 화성의 얼굴을 만나는 길</span>
+          </button>
+          <button class="ccard" type="button" role="tab" aria-selected="false" data-course="b">
+            <span class="ccard__letter" aria-hidden="true">B</span>
+            <b data-i18n="cs.bName">수원천과 화홍문 코스</b>
+            <span class="ccard__tag" data-i18n="cs.bTag">반려견 산책 추천</span>
+            <span class="ccard__hook" data-i18n="cs.bHook">물길과 성곽이 만나는 풍경을 따라</span>
+          </button>
+          <button class="ccard" type="button" role="tab" aria-selected="false" data-course="c">
+            <span class="ccard__letter" aria-hidden="true">C</span>
+            <b data-i18n="cs.cName">행궁 한 바퀴 코스</b>
+            <span class="ccard__tag" data-i18n="cs.cTag">가족, 커플 추천</span>
+            <span class="ccard__hook" data-i18n="cs.cHook">벽화마을과 행궁마을길 골목 산책</span>
+          </button>
+        </div>
+        <div class="stops-pop" data-stops-pop>
+          <div class="stops-pop__panel" role="dialog" aria-modal="true" aria-labelledby="stops-pop-title">
+            <div class="stops-pop__head">
+              <b class="stops-pop__title" id="stops-pop-title"></b>
+              <button class="stops-pop__x" type="button" data-stops-close><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg><span class="visually-hidden" data-i18n="ui.close">닫기</span></button>
+            </div>
+          <ol class="stops" data-course="a"><li data-i18n="s.shop">MOBELIX 화성행궁점</li><li data-i18n="s.museum">수원시립미술관</li><li data-i18n="s.jangan">장안문</li><li data-i18n="s.hwaseo">화서문</li><li data-i18n="s.plaza">행궁광장</li></ol>
+          <ol class="stops" data-course="b" hidden><li data-i18n="s.hmuseum">수원화성박물관</li><li data-i18n="s.eocha">화성어차 승차장</li><li data-i18n="s.yeonmu">연무대</li><li data-i18n="s.hwahong">화홍문</li><li data-i18n="s.mural">행궁동 벽화마을</li><li data-i18n="s.church">북수동 성당</li></ol>
+          <ol class="stops" data-course="c" hidden><li data-i18n="s.plaza">행궁광장</li><li data-i18n="s.museum">수원시립미술관</li><li data-i18n="s.sinpung">신풍동 벽화마을</li><li data-i18n="s.village">행궁마을길</li><li data-i18n="s.hwaseo">화서문</li><li data-i18n="s.miro">미로한정</li><li data-i18n="s.plaza">행궁광장</li></ol>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero">
   <div class="hero__field" data-loop>
     <video muted playsinline loop autoplay preload="auto" poster="assets/video/plaza-wide-poster.jpg" data-wide="assets/video/plaza-wide.mp4" aria-hidden="true"></video>
     <button class="loop-toggle" type="button" data-loop-toggle data-i18n="ui.pause">영상 멈춤</button>
   </div>
   <div class="container hero__foot">
-    <h1 class="hero__title"><span class="ln" data-i18n="hero.t1">네 바퀴로</span> <span class="ln" data-i18n="hero.t2">행궁을 달리다</span></h1>
+    <h2 class="hero__title"><span class="ln" data-i18n="hero.t1">네 바퀴로</span> <span class="ln" data-i18n="hero.t2">행궁을 달리다</span></h2>
     <p class="hero__lede" data-i18n="hero.kicker">수원 화성행궁 앞 네발전기자전거 대여.</p>
     <div class="hero__cta">
       <a class="btn btn--primary" href="#courses" data-i18n="cta.findCourse">나에게 맞는 코스 찾기</a>
       <a class="btn btn--quiet" href="#price"><span data-i18n="cta.from">오픈 특가 1시간</span>&nbsp;<b>15,000</b><span data-i18n="won">원</span></a>
     </div>
-    <dl class="hero__facts">
-      <div><dt data-i18n="v.hours">영업</dt><dd data-i18n="v.hoursV">매일 10:00~19:00</dd></div>
-      <div><dt data-i18n="v.addr">주소</dt><dd data-i18n="v.addrV">경기도 수원시 팔달구 정조로 814 (팔달로1가)</dd></div>
-    </dl>
   </div>
 </section>
 
@@ -190,55 +236,6 @@
   </div>
 </section>
 
-<section class="courses" id="courses">
-  <div class="container">
-    <div class="courses__head">
-      <h2 data-i18n-html="cs.title">매장에서 출발하는 세 가지 코스</h2>
-      <p class="lead" data-i18n="cs.lead">카드를 누르면 지도와 경유지가 바뀌어요.</p>
-    </div>
-    <div class="courses__grid">
-      <div class="courses__side">
-        <div class="cards" role="tablist" aria-label="코스 선택">
-          <button class="ccard is-on" type="button" role="tab" aria-selected="true" data-course="a">
-            <span class="ccard__letter" aria-hidden="true">A</span>
-            <b data-i18n="cs.aName">성곽 북문 코스</b>
-            <span class="ccard__tag" data-i18n="cs.aTag">처음 온 여행자 추천</span>
-            <span class="ccard__hook" data-i18n="cs.aHook">장안문과 화서문, 화성의 얼굴을 만나는 길</span>
-          </button>
-          <button class="ccard" type="button" role="tab" aria-selected="false" data-course="b">
-            <span class="ccard__letter" aria-hidden="true">B</span>
-            <b data-i18n="cs.bName">수원천과 화홍문 코스</b>
-            <span class="ccard__tag" data-i18n="cs.bTag">반려견 산책 추천</span>
-            <span class="ccard__hook" data-i18n="cs.bHook">물길과 성곽이 만나는 풍경을 따라</span>
-          </button>
-          <button class="ccard" type="button" role="tab" aria-selected="false" data-course="c">
-            <span class="ccard__letter" aria-hidden="true">C</span>
-            <b data-i18n="cs.cName">행궁 한 바퀴 코스</b>
-            <span class="ccard__tag" data-i18n="cs.cTag">가족, 커플 추천</span>
-            <span class="ccard__hook" data-i18n="cs.cHook">벽화마을과 행궁마을길 골목 산책</span>
-          </button>
-        </div>
-        <div class="stops-pop" data-stops-pop>
-          <div class="stops-pop__panel" role="dialog" aria-modal="true" aria-labelledby="stops-pop-title">
-            <div class="stops-pop__head">
-              <b class="stops-pop__title" id="stops-pop-title"></b>
-              <button class="stops-pop__x" type="button" data-stops-close><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg><span class="visually-hidden" data-i18n="ui.close">닫기</span></button>
-            </div>
-          <ol class="stops" data-course="a"><li data-i18n="s.shop">MOBELIX 화성행궁점</li><li data-i18n="s.museum">수원시립미술관</li><li data-i18n="s.jangan">장안문</li><li data-i18n="s.hwaseo">화서문</li><li data-i18n="s.plaza">행궁광장</li></ol>
-          <ol class="stops" data-course="b" hidden><li data-i18n="s.hmuseum">수원화성박물관</li><li data-i18n="s.eocha">화성어차 승차장</li><li data-i18n="s.yeonmu">연무대</li><li data-i18n="s.hwahong">화홍문</li><li data-i18n="s.mural">행궁동 벽화마을</li><li data-i18n="s.church">북수동 성당</li></ol>
-          <ol class="stops" data-course="c" hidden><li data-i18n="s.plaza">행궁광장</li><li data-i18n="s.museum">수원시립미술관</li><li data-i18n="s.sinpung">신풍동 벽화마을</li><li data-i18n="s.village">행궁마을길</li><li data-i18n="s.hwaseo">화서문</li><li data-i18n="s.miro">미로한정</li><li data-i18n="s.plaza">행궁광장</li></ol>
-          </div>
-        </div>
-      </div>
-      <div class="route__map" aria-label="코스 지도">
-        <img class="is-on" data-course="a" src="assets/maps/course-a.webp" alt="코스 A 지도" width="2000" height="1500" loading="lazy">
-        <img data-course="b" src="assets/maps/course-b.webp" alt="코스 B 지도" width="2000" height="1500" loading="lazy">
-        <img data-course="c" src="assets/maps/course-c.webp" alt="코스 C 지도" width="2000" height="1500" loading="lazy">
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="freedom">
   <div class="container freedom__head">
     <h2 data-i18n-html="fr.title">행궁 앞, 그 자유로운 기분</h2>
@@ -298,7 +295,19 @@
   </div>
 </footer>
 
-<a class="fab" href="tel:0312520582" aria-label="전화 문의 031-252-0582"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></a>
+<aside class="infobar" aria-label="매장 안내">
+  <div class="container infobar__row">
+    <dl class="infobar__facts">
+      <div><dt data-i18n="v.hours">영업</dt><dd data-i18n="v.hoursV">매일 10:00~19:00</dd></div>
+      <div class="infobar__addr"><dt data-i18n="v.addr">주소</dt><dd data-i18n="bar.addr">정조로 814, 행궁요양원 옆</dd></div>
+      <div class="infobar__age"><dt data-i18n="bar.ageK">나이</dt><dd data-i18n="bar.age">13세 이상, 우천 휴무</dd></div>
+    </dl>
+    <div class="infobar__acts">
+      <a class="btn btn--sm infobar__tel" href="tel:0312520582"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span data-i18n="v.call">전화</span></a>
+      <a class="btn btn--sm btn--primary" href="#visit" data-i18n="bar.go">길찾기</a>
+    </div>
+  </div>
+</aside>
 <div class="toast" role="status" aria-live="polite"></div>
 <script src="js/main.js" defer></script>
 </body>
