@@ -177,21 +177,10 @@
     lastY = y;
   };
 
-  /* ---------- trike showcase: scroll drives the trike and the feature steps ---------- */
-  const showSec = $('.show'), trike = $('.show__trike'), feats = $$('.feats li');
-  function onShow() {
-    if (!showSec || getComputedStyle($('.show__sticky')).position !== 'sticky') return;
-    const r = showSec.getBoundingClientRect(), span = r.height - innerHeight;
-    const p = Math.min(1, Math.max(0, -r.top / span));
-    trike.style.setProperty('--p', p.toFixed(3));
-    const step = p < .34 ? 0 : p < .67 ? 1 : 2;
-    feats.forEach((f, i) => f.classList.toggle('is-on', i === step));
-  }
-
   let ticking = false;
   addEventListener('scroll', () => {
     if (ticking) return; ticking = true;
-    requestAnimationFrame(() => { onScroll(); if (!reduce) onShow(); ticking = false; });
+    requestAnimationFrame(() => { onScroll(); ticking = false; });
   }, { passive: true });
   onScroll();
 
